@@ -477,6 +477,8 @@ class ProductTemplate(models.Model):
     user_inps_id = fields.Many2one(
         'res.users',
         string="Operator inps")
+    gadget_population = fields.Char(
+        string="Gadget population")
 
     
     @api.depends('is_gadget')
