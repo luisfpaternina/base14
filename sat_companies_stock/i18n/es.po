@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-30 18:36+0000\n"
-"PO-Revision-Date: 2022-05-30 18:36+0000\n"
+"POT-Creation-Date: 2022-06-28 13:07+0000\n"
+"PO-Revision-Date: 2022-06-28 13:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "2 años"
 #: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__years__four
 #: model:ir.model.fields.selection,name:sat_companies_stock.selection__stock_gadgets__years__four
 msgid "4 years"
-msgstr ""
+msgstr "4 años"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__years__six
@@ -873,6 +873,12 @@ msgid "End date contract"
 msgstr "Fecha fin cont"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__end_date_correction
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__end_date_correction
+msgid "End date correction"
+msgstr "Fecha fin subsanación"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__end_guarantee
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__end_guarantee
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__end_guarantee
@@ -1099,6 +1105,12 @@ msgid "Gate operator"
 msgstr "Operador puerta"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_good_points
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_good_points
+msgid "Good points"
+msgstr "Puntos favorables"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__employee_greasing_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__employee_greasing_id
 msgid "Greasing operator"
@@ -1173,7 +1185,7 @@ msgstr "Fecha alta call center"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_types_cabin_tubes__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_wash_cabin__id
 msgid "ID"
-msgstr ""
+msgstr "Id"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_bench__message_needaction
@@ -1305,8 +1317,8 @@ msgstr "Tipo aumento"
 
 #. module: sat_companies_stock
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_account_move_inherit_product
-msgid "Information project"
-msgstr "Información contrato"
+msgid "Información presupuesto/OT"
+msgstr ""
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__years_inspection
@@ -2096,6 +2108,12 @@ msgid "October"
 msgstr "Octubre"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__user_inps_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__user_inps_id
+msgid "Operator inps"
+msgstr "Operario Ins"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__employee_notice_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__employee_notice_id
 msgid "Operator notice"
@@ -2539,6 +2557,13 @@ msgstr "Tipo de asistencia"
 #: model:ir.ui.menu,name:sat_companies_stock.menu_stock_types_cabin_tubes
 msgid "Types cabin tubes"
 msgstr "Tipos tubos cabina"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__udn_type_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__udn_type_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__udn_type_id
+msgid "Udn"
+msgstr ""
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bench__message_unread
