@@ -451,7 +451,7 @@ msgstr "Dirección"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__address2
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__address2
 msgid "Address 2"
-msgstr "Dirección 2"
+msgstr "Dirección aparato"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__address3
