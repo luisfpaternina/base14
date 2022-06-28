@@ -287,7 +287,7 @@
 
             <xpath expr="//field[@name='user_id']" position="after">
                 <field name="is_admin"/>
-                <field name="street" string="Dirección"/>
+                <field name="street" string="Address"/>
             </xpath>
             
         </field>
