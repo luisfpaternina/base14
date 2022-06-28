@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-27 13:19+0000\n"
-"PO-Revision-Date: 2022-05-27 13:19+0000\n"
+"POT-Creation-Date: 2022-06-28 18:33+0000\n"
+"PO-Revision-Date: 2022-06-28 18:33+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -43,6 +43,11 @@ msgstr "Estado"
 #: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_view_res_partner_sat_companies
 msgid "Add observations..."
 msgstr "Agregar observaciones"
+
+#. module: sat_companies_partner
+#: model_terms:ir.ui.view,arch_db:sat_companies_partner.inherit_tree_res_partner_sat_companies
+msgid "Address"
+msgstr "Dirección"
 
 #. module: sat_companies_partner
 #: model:ir.model.fields,field_description:sat_companies_partner.field_product_product__partner_admin_id
