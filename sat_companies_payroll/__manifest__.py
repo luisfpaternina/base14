@@ -14,7 +14,7 @@
     'depends': [
 
         'contacts',
-        'hr'
+        'hr',
         'base',
         'hr_payroll',
         'base_automation',
