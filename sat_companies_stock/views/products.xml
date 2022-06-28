@@ -45,11 +45,11 @@
                                 
                             </group>
                             <group>
-                                <field name="address2"/>
-                                <field name="gadget_population"/>
+                               
                             </group>
                              <group>
-                                
+                                <field name="address2"/>
+                                <field name="gadget_population"/>
                             </group>
                             <group> 
                                 <field name="location"/>
