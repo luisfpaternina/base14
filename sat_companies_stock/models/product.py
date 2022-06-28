@@ -474,6 +474,9 @@ class ProductTemplate(models.Model):
         string="Good points")
     end_date_correction =fields.Date(
         string="End date correction")
+    user_inps_id = fields.Many2one(
+        'res.users',
+        string="Operator inps")
 
     
     @api.depends('is_gadget')
