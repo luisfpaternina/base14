@@ -18,7 +18,7 @@
         'base',
         'hr_payroll',
         'base_automation',
-        'sat_companies',
+        'sat_companies_hr',
 
     ],
 
