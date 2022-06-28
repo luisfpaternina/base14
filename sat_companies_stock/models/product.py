@@ -470,6 +470,11 @@ class ProductTemplate(models.Model):
         string="There are keys")
     number_of_tubes = fields.Char(
         string="Number of tubes")
+    is_good_points = fields.Boolean(
+        string="Good points")
+    end_date_correction =fields.Date(
+        string="End date correction")
+
     
     @api.depends('is_gadget')
     def compute_rae(self):
