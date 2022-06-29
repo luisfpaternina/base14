@@ -106,6 +106,7 @@
                                     <field name="repeat_interval" attrs="{'required': [('is_recurring_task', '=', True)]}"/>
                                     <field name="repeat_unit" attrs="{'required': [('is_recurring_task', '=', True)]}"/>
                                 </div>
+                                <field name="repeat_type" attrs="{'required': [('is_recurring_task', '=', True)]}"/>
                             </group>
                             <group>
                                 
