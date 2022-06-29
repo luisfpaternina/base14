@@ -169,5 +169,5 @@ class ProjectTask(models.Model):
     @api.onchange('product_id')
     def get_recurring_records_from_gadget(self):
         if self.product_id:
-            self.recurring_task = product_id.is_recurring_task
+            self.recurring_task = self.product_id.is_recurring_task
 
