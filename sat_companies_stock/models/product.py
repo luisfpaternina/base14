@@ -488,6 +488,24 @@ class ProductTemplate(models.Model):
         ('week','Weeks'),
         ('month','Months'),
         ('year','Years')],string="Repeat unit")
+    mon = fields.Boolean(
+        string="Monday")
+    tue = fields.Boolean(
+        string="Tuesday")
+    wed = fields.Boolean(
+        string="Wednesday")
+    thu = fields.Boolean(
+        string="Thursday")
+    fri = fields.Boolean(
+        string="Friday")
+    sat = fields.Boolean(
+        string="Saturday")
+    sun = fields.Boolean(
+        string="Sunday")
+    repeat_type = fields.Selection([
+        ('forever','Forever'),
+        ('until','Until'),
+        ('after','Repeat number')],string="Repeat type")
 
     
     @api.depends('is_gadget')
