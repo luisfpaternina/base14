@@ -479,6 +479,15 @@ class ProductTemplate(models.Model):
         string="Operator inps")
     gadget_population = fields.Char(
         string="Gadget population")
+    is_recurring_task = fields.Boolean(
+        string="Recurring")
+    repeat_interval = fields.Integer(
+        string="Repeat interval")
+    repeat_unit = fields.Selection([
+        ('day','Days'),
+        ('week','Weeks'),
+        ('month','Months'),
+        ('year','Years')],string="Repeat unit")
 
     
     @api.depends('is_gadget')
