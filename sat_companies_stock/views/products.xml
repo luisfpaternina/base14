@@ -101,6 +101,11 @@
                             </group>
                             <group>
                                 <field name="is_recurring_task"/>
+                                <label for="repeat_interval"/>
+                                <div class="o_row">
+                                    <field name="repeat_interval" attrs="{'required': [('is_recurring_task', '=', True)]}"/>
+                                    <field name="repeat_unit" attrs="{'required': [('is_recurring_task', '=', True)]}"/>
+                                </div>
                             </group>
                             <group>
                                 
