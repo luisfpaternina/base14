@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 17:44+0000\n"
-"PO-Revision-Date: 2022-06-28 17:44+0000\n"
+"POT-Creation-Date: 2022-06-29 12:03+0000\n"
+"PO-Revision-Date: 2022-06-29 12:03+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -769,6 +769,11 @@ msgid "Date population"
 msgstr "Vecindad"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_unit__day
+msgid "Days"
+msgstr "Días"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_december
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_december
 msgid "December"
@@ -1003,10 +1008,21 @@ msgid "Followers (Partners)"
 msgstr "Seguidores"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_type__forever
+msgid "Forever"
+msgstr "Por siempre"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__frequency_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__frequency_name
 msgid "Frequency name"
 msgstr "Nombre frecuencia mantenimiento"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__fri
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__fri
+msgid "Friday"
+msgstr "Viernes"
 
 #. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_gsm_model
@@ -1836,9 +1852,16 @@ msgid "Model gadget"
 msgstr "Modelo"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__mon
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__mon
+msgid "Monday"
+msgstr "Lunes"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__months_number
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__months_number
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__months_number
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_unit__month
 msgid "Months"
 msgstr "Meses"
 
@@ -2276,6 +2299,12 @@ msgid "RECOPILACIÓN DATOS APARATOS"
 msgstr ""
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_recurring_task
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_recurring_task
+msgid "Recurring"
+msgstr ""
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__reduced_flight
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__reduced_flight
 msgid "Reduced flight"
@@ -2299,6 +2328,29 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__ref
 msgid "Reference"
 msgstr "Referencia"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_interval
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_interval
+msgid "Repeat interval"
+msgstr "Repetir cada"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_type__after
+msgid "Repeat number"
+msgstr "Número de repeticiones"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_type
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_type
+msgid "Repeat type"
+msgstr "Hasta"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_unit
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_unit
+msgid "Repeat unit"
+msgstr "Repetir"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__responsable_zone_id
@@ -2359,6 +2411,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__sale_type_id
 msgid "Sale Type"
 msgstr "Tipo presupuesto/OT"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__sat
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__sat
+msgid "Saturday"
+msgstr "Sábado"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_september
@@ -2447,6 +2505,12 @@ msgid "Subscription template"
 msgstr "Plantilla de suscripción"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__sun
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__sun
+msgid "Sunday"
+msgstr "Domingo"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__task_user_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__task_user_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__task_user_id
@@ -2497,6 +2561,12 @@ msgid "There are keys"
 msgstr "Hay llaves"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__thu
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__thu
+msgid "Thursday"
+msgstr "Jueves"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__today
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__today
 msgid "Today"
@@ -2525,6 +2595,12 @@ msgstr "Polea tractora(cm)"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__tractor_group
 msgid "Tractor group"
 msgstr "Grupo tractor"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__tue
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__tue
+msgid "Tuesday"
+msgstr "Martes"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__type_gadget
@@ -2636,6 +2712,11 @@ msgid "Unsubscribe"
 msgstr "Darse de baja"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_type__until
+msgid "Until"
+msgstr "Fecha final"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__gadget_use_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__gadget_use_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__gadget_use_id
@@ -2735,10 +2816,22 @@ msgid "Website communication history"
 msgstr ""
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__wed
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__wed
+msgid "Wednesday"
+msgstr "Miércoles"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_unit__week
+msgid "Weeks"
+msgstr "Semanas"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__years_number
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__years_number
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__years
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__years_number
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_unit__year
 msgid "Years"
 msgstr "Años"
 
