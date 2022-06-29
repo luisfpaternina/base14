@@ -165,3 +165,9 @@ class ProjectTask(models.Model):
                 if line.checklist_id.id in exis_record_lines:
                     raise ValidationError(_('The column should be one per line'))
                 exis_record_lines.append(line.checklist_id.id)
+
+    @api.onchange('product_id')
+    def get_recurring_records_from_gadget(self):
+        if self.product_id:
+            self.recurring_task = product_id.is_recurring_task
+
