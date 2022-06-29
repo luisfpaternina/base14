@@ -179,15 +179,3 @@ class ProjectTask(models.Model):
             self.fri = self.product_id.fri
             self.sat = self.product_id.sat
             self.sun = self.product_id.sun
-
-    @api.model
-    def create(self, vals):
-        rec = super(ProjectTask self).create(vals)
-        self.get_recurring_records_from_gadget()
-        return rec
-
-    @api.model
-    def write(self, vals):
-        rec = super(ProjectTask self).write(vals)
-        self.get_recurring_records_from_gadget()
-        return rec
