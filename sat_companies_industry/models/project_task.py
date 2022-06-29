@@ -170,4 +170,5 @@ class ProjectTask(models.Model):
     def get_recurring_records_from_gadget(self):
         if self.product_id:
             self.recurring_task = self.product_id.is_recurring_task
-
+            self.repeat_interval = self.product_id.repeat_interval
+            self.repeat_unit = self.product_id.repeat_unit
