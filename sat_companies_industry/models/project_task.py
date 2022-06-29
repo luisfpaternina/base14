@@ -143,11 +143,9 @@ class ProjectTask(models.Model):
             else:
                 return {'domain': {'categ_udn_id': []}}
 
-
     @api.onchange('contact_person')
     def _capitalizate_name(self):        
         self.contact_person = self.contact_person.title() if self.contact_person else False
-
 
     @api.depends('ot_date')
     def calculate_month(self):
@@ -155,11 +153,9 @@ class ProjectTask(models.Model):
             dt = datetime.datetime.today()
             record.month_date = dt.month
 
-
     @api.onchange('checklist_ot_ids')
     def _onchange_checklist(self):
         self.checklist_ot_ids.onchange_checklist()
-
 
     @api.constrains('checklist_ot_ids')
     def _check_exist_record_in_lines(self):
