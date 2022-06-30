@@ -7,8 +7,10 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
 
-            <xpath expr="//field[(@name='type')]" position="after">
-                <field name="potencial_contact" invisible="1"/>
+            <!-- AGREGAR CAMPOS A LA VISTA PRINCIPAL DE RES.PARTNER -->
+            <xpath expr="//field[(@name='vat')]" position="after">
+                <field name="age"/>
+                <field name="gender"/>
             </xpath>
         
         </field>
