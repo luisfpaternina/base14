@@ -223,6 +223,12 @@
                         <group>
                             <field name="user_inps_id" options="{'no_create': True, 'no_create_edit':True}"/>
                         </group>
+                        <group>
+                            <field name="inspection_type_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                        </group>
+                        <group>
+                            
+                        </group>
                     </group>
                 </page>
                 <page string="Technical data" attrs="{'invisible': [('is_gadget', '!=', True)]}">
