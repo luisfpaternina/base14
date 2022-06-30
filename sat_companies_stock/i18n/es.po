@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 12:03+0000\n"
-"PO-Revision-Date: 2022-06-29 12:03+0000\n"
+"POT-Creation-Date: 2022-06-30 17:30+0000\n"
+"PO-Revision-Date: 2022-06-30 17:30+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -384,6 +384,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_needaction
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_needaction
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_needaction
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_needaction
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_needaction
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_needaction
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_needaction
@@ -412,6 +413,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__active
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__active
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__active
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__active
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__active
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__active
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__active
@@ -507,6 +509,7 @@ msgstr "Tipo asignación"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_attachment_count
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_attachment_count
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_attachment_count
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_attachment_count
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_attachment_count
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_attachment_count
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_attachment_count
@@ -656,6 +659,7 @@ msgstr "Polea contrapeso"
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_stock_cockpit_push_type
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_bidirectional_model
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_gsm_model
+#: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_inspection_type
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_landing_doors
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_landing_key
 #: model_terms:ir.actions.act_window,help:sat_companies_stock.action_view_landing_keypad
@@ -692,6 +696,7 @@ msgstr "Crear nuevo registro"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__create_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__create_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__create_uid
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__create_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__create_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__create_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__create_uid
@@ -721,6 +726,7 @@ msgstr "Creado por"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__create_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__create_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__create_date
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__create_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__create_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__create_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__create_date
@@ -813,6 +819,7 @@ msgstr "Nombre delegación"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__display_name
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__display_name
@@ -934,6 +941,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_follower_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_follower_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_follower_ids
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_follower_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_follower_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_follower_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_follower_ids
@@ -963,6 +971,7 @@ msgstr "Seguidores"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_channel_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_channel_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_channel_ids
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_channel_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_channel_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_channel_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_channel_ids
@@ -992,6 +1001,7 @@ msgstr "Seguidores canal"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_partner_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_partner_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_partner_ids
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_partner_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_partner_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_partner_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_partner_ids
@@ -1193,6 +1203,7 @@ msgstr "Fecha alta call center"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__id
@@ -1236,6 +1247,8 @@ msgstr "Id"
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_use__message_unread
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gsm_model__message_needaction
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gsm_model__message_unread
+#: model:ir.model.fields,help:sat_companies_stock.field_stock_inspection_type__message_needaction
+#: model:ir.model.fields,help:sat_companies_stock.field_stock_inspection_type__message_unread
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_doors__message_needaction
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_doors__message_unread
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_key__message_needaction
@@ -1290,6 +1303,8 @@ msgstr ""
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_use__message_has_sms_error
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gsm_model__message_has_error
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gsm_model__message_has_sms_error
+#: model:ir.model.fields,help:sat_companies_stock.field_stock_inspection_type__message_has_error
+#: model:ir.model.fields,help:sat_companies_stock.field_stock_inspection_type__message_has_sms_error
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_doors__message_has_error
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_doors__message_has_sms_error
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_key__message_has_error
@@ -1343,6 +1358,12 @@ msgid "Información presupuesto/OT"
 msgstr ""
 
 #. module: sat_companies_stock
+#: model:ir.actions.act_window,name:sat_companies_stock.action_view_inspection_type
+#: model:ir.ui.menu,name:sat_companies_stock.menu_stock_inspection_type
+msgid "Inspection type"
+msgstr "Tipo de inspección"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__years_inspection
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__years_inspection
 msgid "Inspection years"
@@ -1381,6 +1402,7 @@ msgstr "Servicio 24H"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_is_follower
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_is_follower
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_is_follower
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_is_follower
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_is_follower
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_is_follower
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_is_follower
@@ -1504,6 +1526,7 @@ msgstr "Llaves"
 
 #. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_landing_doors
+#: model:ir.model,name:sat_companies_stock.model_stock_inspection_type
 #: model:ir.model,name:sat_companies_stock.model_stock_landing_doors
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__landing_doors_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__landing_doors_id
@@ -1557,6 +1580,7 @@ msgstr "Tipo cerradura rellano"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model____last_update
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad____last_update
@@ -1587,6 +1611,7 @@ msgstr "Última modificación el"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__write_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__write_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__write_uid
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__write_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__write_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__write_uid
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__write_uid
@@ -1616,6 +1641,7 @@ msgstr "Última modificación el"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__write_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__write_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__write_date
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__write_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__write_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__write_date
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__write_date
@@ -1722,6 +1748,7 @@ msgstr "Sala de máquinas"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_main_attachment_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_main_attachment_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_main_attachment_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_main_attachment_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_main_attachment_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_main_attachment_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_main_attachment_id
@@ -1801,6 +1828,7 @@ msgstr "Mayo"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_has_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_has_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_has_error
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_has_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_has_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_has_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_has_error
@@ -1830,6 +1858,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_ids
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_ids
@@ -1892,6 +1921,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__name
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__name
@@ -1915,6 +1945,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_gadgets_types_assistance_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_gadgets_use_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_gsm_model_form
+#: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_inspection_type_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_landing_doors_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_landing_key_form
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.view_stock_landing_keypad_form
@@ -1980,6 +2011,7 @@ msgstr "Noviembre"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_needaction_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_needaction_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_needaction_counter
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_needaction_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_needaction_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_needaction_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_needaction_counter
@@ -2009,6 +2041,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_has_error_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_has_error_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_has_error_counter
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_has_error_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_has_error_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_has_error_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_has_error_counter
@@ -2038,6 +2071,7 @@ msgstr ""
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_types_assistance__message_needaction_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_use__message_needaction_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gsm_model__message_needaction_counter
+#: model:ir.model.fields,help:sat_companies_stock.field_stock_inspection_type__message_needaction_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_doors__message_needaction_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_key__message_needaction_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_keypad__message_needaction_counter
@@ -2067,6 +2101,7 @@ msgstr ""
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_types_assistance__message_has_error_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_use__message_has_error_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gsm_model__message_has_error_counter
+#: model:ir.model.fields,help:sat_companies_stock.field_stock_inspection_type__message_has_error_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_doors__message_has_error_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_key__message_has_error_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_keypad__message_has_error_counter
@@ -2102,6 +2137,7 @@ msgstr "Número de tubos"
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_types_assistance__message_unread_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_use__message_unread_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gsm_model__message_unread_counter
+#: model:ir.model.fields,help:sat_companies_stock.field_stock_inspection_type__message_unread_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_doors__message_unread_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_key__message_unread_counter
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_keypad__message_unread_counter
@@ -2390,6 +2426,7 @@ msgstr "Recorrido"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_has_sms_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_has_sms_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_has_sms_error
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_has_sms_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_has_sms_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_has_sms_error
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_has_sms_error
@@ -2661,6 +2698,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_unread
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_unread
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_unread
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_unread
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_unread
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_unread
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_unread
@@ -2690,6 +2728,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__message_unread_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__message_unread_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__message_unread_counter
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__message_unread_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__message_unread_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__message_unread_counter
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__message_unread_counter
@@ -2771,6 +2810,7 @@ msgstr "Llavín cabina"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_types_assistance__website_message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets_use__website_message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gsm_model__website_message_ids
+#: model:ir.model.fields,field_description:sat_companies_stock.field_stock_inspection_type__website_message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_doors__website_message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_key__website_message_ids
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_landing_keypad__website_message_ids
@@ -2800,6 +2840,7 @@ msgstr ""
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_types_assistance__website_message_ids
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gadgets_use__website_message_ids
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_gsm_model__website_message_ids
+#: model:ir.model.fields,help:sat_companies_stock.field_stock_inspection_type__website_message_ids
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_doors__website_message_ids
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_key__website_message_ids
 #: model:ir.model.fields,help:sat_companies_stock.field_stock_landing_keypad__website_message_ids
