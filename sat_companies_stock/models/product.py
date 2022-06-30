@@ -513,6 +513,10 @@ class ProductTemplate(models.Model):
         string="Correction period")
     correction_period_date = fields.Date(
         string="Correction period date")
+    date_pending_correction = fields.Date(
+        string="Date pending correction")
+    bad_points = fields.Boolean(
+        string="Bad points")
 
     
     @api.depends('is_gadget')
