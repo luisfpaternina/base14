@@ -55,6 +55,7 @@
         'views/stock_landing_key.xml',
         'views/stock_state_record.xml',
         'views/stock_location.xml',
+        'views/stock_inspection_type.xml',
         'reports/technical_data_template.xml',
         
     ],
