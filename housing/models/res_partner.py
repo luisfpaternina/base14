@@ -5,4 +5,6 @@ class ResPartner(models.Model):
 
     # CAMPOS
     age = fields.Integer(string="Age")
-    gender = fields.Selection([('male','Male'),('famale','Famale')],string="Gender")
+    gender = fields.Selection([
+        ('male','Male'),
+        ('famale','Famale')],string="Gender")
