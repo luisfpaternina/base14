@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-30 17:30+0000\n"
-"PO-Revision-Date: 2022-06-30 17:30+0000\n"
+"POT-Creation-Date: 2022-06-30 17:56+0000\n"
+"PO-Revision-Date: 2022-06-30 17:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -532,6 +532,12 @@ msgid "August"
 msgstr "Agosto"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__bad_points
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__bad_points
+msgid "Bad points"
+msgstr "Puntos desfavorables"
+
+#. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_stock_bench
 #: model:ir.model,name:sat_companies_stock.model_stock_bench
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__bench_id
@@ -648,6 +654,18 @@ msgstr "Contrato"
 #: model:ir.ui.menu,name:sat_companies_stock.menu_gadgets_contract_type_sale_subscription
 msgid "Contract type"
 msgstr "Tipo de suscripción"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__correction_period
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__correction_period
+msgid "Correction period"
+msgstr "Plazo subsanación"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__correction_period_date
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__correction_period_date
+msgid "Correction period date"
+msgstr ""
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__counterweight_pulley
@@ -767,6 +785,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_gadgets__correction_date
 msgid "Date of correction"
 msgstr ""
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__date_pending_correction
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__date_pending_correction
+msgid "Date pending correction"
+msgstr "Fecha pendiente subsanación"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__population_id
@@ -1359,6 +1383,8 @@ msgstr ""
 
 #. module: sat_companies_stock
 #: model:ir.actions.act_window,name:sat_companies_stock.action_view_inspection_type
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__inspection_type_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__inspection_type_id
 #: model:ir.ui.menu,name:sat_companies_stock.menu_stock_inspection_type
 msgid "Inspection type"
 msgstr "Tipo de inspección"

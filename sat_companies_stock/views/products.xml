@@ -217,7 +217,7 @@
                             <field name="next_inspection"/>
                         </group>
                         <group>
-                            <field name="is_good_points"/>
+                            <field name="bad_points"/>
                             <field name="end_date_correction"/>
                         </group>
                         <group>
@@ -229,7 +229,7 @@
                             <field name="correction_period_date"/>
                         </group>
                         <group>
-                            
+                            <field name="date_pending_correction"/>
                         </group>
                     </group>
                 </page>
