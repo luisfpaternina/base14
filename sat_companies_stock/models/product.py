@@ -506,6 +506,9 @@ class ProductTemplate(models.Model):
         ('forever','Forever'),
         ('until','Until'),
         ('after','Repeat number')],string="Repeat type")
+    inspection_type_id = fields.Many2one(
+        'stock.inspection.type',
+        string="Inspection type")
 
     
     @api.depends('is_gadget')
