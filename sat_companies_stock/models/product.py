@@ -509,6 +509,10 @@ class ProductTemplate(models.Model):
     inspection_type_id = fields.Many2one(
         'stock.inspection.type',
         string="Inspection type")
+    correction_period = fields.Char(
+        string="Correction period")
+    correction_period_date = fields.Date(
+        string="Correction period date")
 
     
     @api.depends('is_gadget')
