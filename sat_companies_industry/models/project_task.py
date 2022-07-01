@@ -172,3 +172,9 @@ class ProjectTask(models.Model):
             self.recurring_task = self.product_id.is_recurring_task
             self.repeat_interval = self.product_id.repeat_interval
             self.repeat_unit = self.product_id.repeat_unit
+
+    @api.model
+    def create(self, vals):
+        rec = super(ProjectTask, self).create(vals)
+        self.get_recurring_records_from_gadget()    
+        return rec
