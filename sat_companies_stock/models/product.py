@@ -521,6 +521,14 @@ class ProductTemplate(models.Model):
         ('october','October'),
         ('november','November'),
         ('december','December')],string="Repeat month")
+    repeat_weekday = fields.Selection([
+        ('mon','Monday'),
+        ('tue','Tuesday'),
+        ('wed','Wednesday'),
+        ('thu','Thursday'),
+        ('fri','Friday'),
+        ('sat','Saturday'),
+        ('sun','Sunday')],string="Repeat weekday")
     repeat_type = fields.Selection([
         ('forever','Forever'),
         ('until','Until'),
