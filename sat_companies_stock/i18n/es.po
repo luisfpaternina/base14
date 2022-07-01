@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-30 17:56+0000\n"
-"PO-Revision-Date: 2022-06-30 17:56+0000\n"
+"POT-Creation-Date: 2022-07-01 11:41+0000\n"
+"PO-Revision-Date: 2022-07-01 11:41+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -485,6 +485,7 @@ msgstr "Todo riesgo"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_april
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_april
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__april
 msgid "April"
 msgstr "Abril"
 
@@ -528,6 +529,7 @@ msgstr ""
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_august
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_august
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__august
 msgid "August"
 msgstr "Agosto"
 
@@ -766,6 +768,12 @@ msgid "DATOS TÉCNICOS"
 msgstr ""
 
 #. module: sat_companies_stock
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_on_month__date
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_on_year__date
+msgid "Date"
+msgstr "Fecha del mes"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__date_end
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__date_end
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_payment__date_end
@@ -799,6 +807,12 @@ msgid "Date population"
 msgstr "Vecindad"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_on_month__day
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_on_year__day
+msgid "Day"
+msgstr "Día del mes"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_unit__day
 msgid "Days"
 msgstr "Días"
@@ -806,6 +820,7 @@ msgstr "Días"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_december
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_december
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__december
 msgid "December"
 msgstr "Diciembre"
 
@@ -937,6 +952,7 @@ msgstr "Fecha prórroga"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_february
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_february
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__february
 msgid "February"
 msgstr "Febrero"
 
@@ -1055,6 +1071,7 @@ msgstr "Nombre frecuencia mantenimiento"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__fri
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__fri
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_weekday__fri
 msgid "Friday"
 msgstr "Viernes"
 
@@ -1523,6 +1540,7 @@ msgstr "Pesacargas"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_january
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_january
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__january
 msgid "January"
 msgstr "Enero"
 
@@ -1534,12 +1552,14 @@ msgstr "Asiento contable"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_july
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_july
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__july
 msgid "July"
 msgstr "Julio"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_june
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_june
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__june
 msgid "June"
 msgstr "Junio"
 
@@ -1831,12 +1851,14 @@ msgstr "Cuadro de maniobras"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_march
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_march
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__march
 msgid "March"
 msgstr "Marzo"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_may
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_may
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__may
 msgid "May"
 msgstr "Mayo"
 
@@ -1909,6 +1931,7 @@ msgstr "Modelo"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__mon
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__mon
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_weekday__mon
 msgid "Monday"
 msgstr "Lunes"
 
@@ -2020,6 +2043,7 @@ msgstr ""
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_november
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_november
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__november
 msgid "November"
 msgstr "Noviembre"
 
@@ -2195,6 +2219,7 @@ msgstr ""
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_october
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_october
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__october
 msgid "October"
 msgstr "Octubre"
 
@@ -2398,9 +2423,39 @@ msgid "Repeat interval"
 msgstr "Repetir cada"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_month
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_month
+msgid "Repeat month"
+msgstr "Repetir mes"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_type__after
 msgid "Repeat number"
 msgstr "Número de repeticiones"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_show_day
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_show_day
+msgid "Repeat show day"
+msgstr "Repetir el día del espectáculo"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_show_dow
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_show_dow
+msgid "Repeat show dow"
+msgstr "Repetir Show Dow"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_show_month
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_show_month
+msgid "Repeat show month"
+msgstr "Repetir el mes del programa"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_show_week
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_show_week
+msgid "Repeat show week"
+msgstr "Repetir la semana del espectáculo"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_type
@@ -2413,6 +2468,20 @@ msgstr "Hasta"
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_unit
 msgid "Repeat unit"
 msgstr "Repetir"
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_weekday
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_weekday
+msgid "Repeat weekday"
+msgstr ""
+
+#. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_on_month
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__repeat_on_year
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_on_month
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__repeat_on_year
+msgid "Repeat year"
+msgstr ""
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__responsable_zone_id
@@ -2478,12 +2547,14 @@ msgstr "Tipo presupuesto/OT"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__sat
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__sat
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_weekday__sat
 msgid "Saturday"
 msgstr "Sábado"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_september
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_september
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_month__september
 msgid "September"
 msgstr "Septiembre"
 
@@ -2570,6 +2641,7 @@ msgstr "Plantilla de suscripción"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__sun
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__sun
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_weekday__sun
 msgid "Sunday"
 msgstr "Domingo"
 
@@ -2626,6 +2698,7 @@ msgstr "Hay llaves"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__thu
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__thu
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_weekday__thu
 msgid "Thursday"
 msgstr "Jueves"
 
@@ -2662,6 +2735,7 @@ msgstr "Grupo tractor"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__tue
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__tue
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_weekday__tue
 msgid "Tuesday"
 msgstr "Martes"
 
@@ -2885,6 +2959,7 @@ msgstr ""
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__wed
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__wed
+#: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_weekday__wed
 msgid "Wednesday"
 msgstr "Miércoles"
 
