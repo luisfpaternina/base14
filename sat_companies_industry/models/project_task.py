@@ -172,10 +172,4 @@ class ProjectTask(models.Model):
             self.recurring_task = self.product_id.is_recurring_task
             self.repeat_interval = self.product_id.repeat_interval
             self.repeat_unit = self.product_id.repeat_unit
-            self.mon = self.product_id.mon
-            self.tue = self.product_id.tue
-            self.wed = self.product_id.wed
-            self.thu = self.product_id.thu
-            self.fri = self.product_id.fri
-            self.sat = self.product_id.sat
-            self.sun = self.product_id.sun
+            self.write('mon': product_id.mon)
