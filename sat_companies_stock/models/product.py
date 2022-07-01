@@ -505,6 +505,19 @@ class ProductTemplate(models.Model):
     repeat_on_year = fields.Selection([
         ('date','Date'),
         ('day','Day')],string="Repeat year")
+    repeat_month = fields.Selection([
+        ('january','January'),
+        ('february','February'),
+        ('march','March'),
+        ('april','April'),
+        ('may','May'),
+        ('june','June'),
+        ('july','July'),
+        ('august','August'),
+        ('september','September'),
+        ('october','October'),
+        ('november','November'),
+        ('december','December')],string="Repeat month")
     repeat_type = fields.Selection([
         ('forever','Forever'),
         ('until','Until'),
