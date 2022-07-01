@@ -502,6 +502,9 @@ class ProductTemplate(models.Model):
         string="Saturday")
     sun = fields.Boolean(
         string="Sunday")
+    repeat_on_year = fields.Selection([
+        ('date','Date'),
+        ('day','Day')],string="Repeat year")
     repeat_type = fields.Selection([
         ('forever','Forever'),
         ('until','Until'),
