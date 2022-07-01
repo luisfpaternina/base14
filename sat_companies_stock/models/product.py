@@ -533,6 +533,14 @@ class ProductTemplate(models.Model):
         ('forever','Forever'),
         ('until','Until'),
         ('after','Repeat number')],string="Repeat type")
+    repeat_show_day = fields.Boolean(
+        string="Repeat show day")
+    repeat_show_dow = fields.Boolean(
+        string="Repeat show dow")
+    repeat_show_week = fields.Boolean(
+        string="Repeat show week")
+    repeat_show_month = fields.Boolean(
+        string="Repeat show month")
     inspection_type_id = fields.Many2one(
         'stock.inspection.type',
         string="Inspection type")
