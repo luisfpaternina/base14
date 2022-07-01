@@ -178,9 +178,3 @@ class ProjectTask(models.Model):
         rec = super(ProjectTask, self).create(vals)
         self.get_recurring_records_from_gadget()    
         return rec
-
-    @api.model
-    def write(self, vals):
-        rec = super(ProjectTask, self).write(vals)
-        self.get_recurring_records_from_gadget()    
-        return rec
