@@ -26,7 +26,7 @@
                         <field name="recurring_rule_boundary" invisible="1"/>
                         <field name="document_ids" widget="many2many_binary" invisible="1"/>
                         <field name="check_signature" invisible="1"/>
-                        <field name="pdf_file_welcome"/>
+                        <field name="pdf_file_welcome" invisible="1"/>
                         <field name="stage_code" invisible="1"/>
                         <field name="exclude_months"/>
                     </group>
