@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <template id="report_custom_license_plates">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">                    
+                    <div class="header">
+                        <table style="width:100%;">
+                        	 <thead>
+                        	 	<tr>
+                        	 		<th></th>
+                        	 		<th></th>
+                        	 		<th><p align="center" style="font-size:30px;">MATRICULA #</p></th>
+                        	 	</tr>
+                        	 </thead>
+                        	 <tbody>
+                        	 	<tr>
+                        	 		<td>
+                        	 			<p style="font-size:16px;">
+                        	 			
+                        	 			</p>
+                        	 		</td>
+                        	 		<td></td>
+                        	 		<td>
+                        	 			<p style="font-size:16px;" align="right">
+                        	 			
+                        	 			</p>
+                        	 		</td>
+                        	 	</tr>
+                        	 </tbody>
+                        </table>
+                    </div>
+                    <div class="article o_report_layout_standard">
+                       <div class="page">
+                            cuerpo del reporte
+                       </div>
+                    </div>
+                    <div class="footer">
+                        <p align="center">If you have any questions about this price quote, please contact<br></br>
+                        Paola Bonilla, 4088443408, pgalindo@example.com<br></br>
+                        <strong>Thank You For Your Business!</strong>
+                    	</p>
+                    </div>
+                </t>
+            </t>
+        </template>
+        <report
+                id="id_report_custom_license_plates"
+                string="Matricula del estudiante"
+                model="license.plates"
+                report_type="qweb-pdf"
+                name="colegio.report_custom_license_plates"
+        />
+  </data>
+</odoo>
