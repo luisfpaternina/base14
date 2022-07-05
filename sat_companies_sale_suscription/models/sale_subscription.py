@@ -93,6 +93,9 @@ class SaleSuscriptionInherit(models.Model):
         'Exlude Months')
     subscription_month_ids = fields.Many2many(
         'sale.subscription.month')
+    udn_type_id = fields.Many2one(
+        'project.task.categ.udn',
+        string="Udn")
 
 
     @api.depends('partner_id', 'product_id')
@@ -237,6 +240,14 @@ class SaleSuscriptionInherit(models.Model):
     def _onchange_team(self):
         for record in self:
             print('team')
+
+    @api.onchange('sale_type_id', 'product_id')
+    def domain_udn_type(self):
+        for record in self:
+            if record.sale_type_id:
+                return {'domain': {'udn_type_id': [('ot_type_id', '=', record.sale_type_id.id)]}}
+            else:
+                return {'domain': {'udn_type_id': []}}
 
     def _recurring_create_invoice(self):
         res = super(SaleSuscriptionInherit, self)._recurring_create_invoice()

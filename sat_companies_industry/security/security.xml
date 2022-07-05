@@ -22,5 +22,10 @@
 	        <field name="comment">Manager type associated Permission Group</field>
 	    </record>
 
+	    <record id="project_tast_warning_manager_group" model="res.groups">
+	        <field name="name">Manager warning</field>
+	        <field name="comment">Manager warning Permission Group</field>
+	    </record>
+
 	</data>
 </odoo>
