@@ -241,6 +241,14 @@ class SaleSuscriptionInherit(models.Model):
         for record in self:
             print('team')
 
+    @api.onchange('sale_type_id', 'product_id')
+    def domain_udn_type(self):
+        for record in self:
+            if record.sale_type_id:
+                return {'domain': {'udn_type_id': [('ot_type_id', '=', record.sale_type_id.id)]}}
+            else:
+                return {'domain': {'udn_type_id': []}}
+
     def _recurring_create_invoice(self):
         res = super(SaleSuscriptionInherit, self)._recurring_create_invoice()
         for record in self:
