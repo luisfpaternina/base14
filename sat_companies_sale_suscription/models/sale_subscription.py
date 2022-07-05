@@ -93,6 +93,9 @@ class SaleSuscriptionInherit(models.Model):
         'Exlude Months')
     subscription_month_ids = fields.Many2many(
         'sale.subscription.month')
+    udn_type_id = fields.Many2one(
+        'project.task.categ.udn',
+        string="Udn")
 
 
     @api.depends('partner_id', 'product_id')
