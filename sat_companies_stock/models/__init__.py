@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from . import account_move
 from . import product
+from . import project_task
 from . import stock_gadgets
 from . import stock_gadgets_types_assistance
 from . import stock_gadgets_state
