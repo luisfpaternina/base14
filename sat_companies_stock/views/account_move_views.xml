@@ -12,7 +12,7 @@
                         <field name="check_product" invisible="True"/>
                         <field name="product_id" domain = "[('is_gadget','=',True),('partner_id','=',partner_id)]"/>
                         <field name="rae"/>
-                        <field name="task_user_id" attrs="{'invisible': [('check_product', '!=', True)],'required': [('check_product', '!=', False)]}"/>
+                        <field name="task_user_id" invisible="1"/>
                     </group>
                     <group name="group_right" string="Información presupuesto/OT">
                         <field name="sale_type_id" options="{'no_create': True, 'no_create_edit':True}"/>
