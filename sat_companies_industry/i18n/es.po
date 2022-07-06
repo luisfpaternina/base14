@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 21:11+0000\n"
-"PO-Revision-Date: 2022-07-06 21:11+0000\n"
+"POT-Creation-Date: 2022-07-06 21:26+0000\n"
+"PO-Revision-Date: 2022-07-06 21:26+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -565,6 +565,11 @@ msgid "Breakdowns"
 msgstr "Averías"
 
 #. module: sat_companies_industry
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__breakdowns_notice
+msgid "Breakdowns notice"
+msgstr ""
+
+#. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__categ_udn_id
 msgid "Category/Udn OT"
 msgstr "Categoría/UdN OT"
@@ -938,6 +943,16 @@ msgstr "Es octubre"
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task_ot_checklist__is_september
 msgid "Is September"
 msgstr "Is septiembre"
+
+#. module: sat_companies_industry
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__is_apartament
+msgid "Is apartament"
+msgstr "Atrapamiento"
+
+#. module: sat_companies_industry
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__is_conflictive_apparatus
+msgid "Is conflictive apparatus"
+msgstr "El aparato es conflictivo"
 
 #. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__is_maintenance
@@ -1437,6 +1452,11 @@ msgid "September"
 msgstr "Septiembre"
 
 #. module: sat_companies_industry
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__service_h
+msgid "Service 24h"
+msgstr "Servicio 24H"
+
+#. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__situation
 msgid "Situation"
 msgstr "Situación"
@@ -1597,6 +1617,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__checklist_line_ids
 msgid "checklist lines"
 msgstr ""
+
+#. module: sat_companies_industry
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__is_blocked
+msgid "is Blocked"
+msgstr "Incidencia"
 
 #. module: sat_companies_industry
 #: model_terms:ir.ui.view,arch_db:sat_companies_industry.view_maintenance_minute_point_tree
