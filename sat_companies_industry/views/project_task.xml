@@ -106,6 +106,7 @@
             </xpath>
             
             <xpath expr="//field[(@name='partner_id')]" position="after">
+                <field name="ot_code"/>
                 <field name="product_id" options="{'no_create': True, 'no_create_edit':True}" domain = "[('is_gadget','=',True),('partner_id','=',partner_id)]"/>
                 <field name="rae"/>
                 <field name="ot_type_id" invisible="1"/>
