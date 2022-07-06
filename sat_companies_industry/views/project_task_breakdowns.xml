@@ -8,6 +8,7 @@
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree >
+                    <field name="code"/>
                     <field name="name"/>   
                 </tree>
             </field>
