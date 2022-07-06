@@ -133,6 +133,8 @@ class ProjectTask(models.Model):
         string="DNI")
     floor = fields.Char(
         string="Floor")
+    ot_code = fields.Char(
+        string="OT code")
 
 
     @api.onchange('ot_type_id')
