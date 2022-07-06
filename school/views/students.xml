@@ -67,7 +67,7 @@
                                         <field name="city_id"/>
                                     </group>
                                     <group>
-                                        <field name="hobby_id" widget="many2many_tags"/>
+                                        <field name="hobby_id" widget="many2many_tags" options="{'color_field': 'color'}"/>
                                     </group>
                                     <group>
                                         
