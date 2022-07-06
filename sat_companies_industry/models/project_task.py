@@ -173,15 +173,18 @@ class ProjectTask(models.Model):
                     raise ValidationError(_('The column should be one per line'))
                 exis_record_lines.append(line.checklist_id.id)
 
+    """
     @api.onchange('product_id')
     def get_recurring_records_from_gadget(self):
         if self.product_id:
             self.recurring_task = self.product_id.is_recurring_task
             self.repeat_interval = self.product_id.repeat_interval
             self.repeat_unit = self.product_id.repeat_unit
+    
 
     @api.model
     def create(self, vals):
         rec = super(ProjectTask, self).create(vals)
         self.get_recurring_records_from_gadget()    
         return rec
+    """
