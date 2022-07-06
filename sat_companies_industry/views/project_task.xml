@@ -142,6 +142,7 @@
                       <field name="is_apartament"/>
                       <field name="is_blocked"/>
                       <field name="service_h"/>
+                      <field name="is_conflictive_apparatus"/>
                       <field name="breakdowns_notice"/>
                   </group>
                 </group>
