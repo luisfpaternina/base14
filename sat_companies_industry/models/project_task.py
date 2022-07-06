@@ -142,6 +142,9 @@ class ProjectTask(models.Model):
         string="Breakdowns")
     is_warning = fields.Boolean(
         string="Is warning")
+    stop_type = fields.Selection([
+        ('yes','Yes'),
+        ('not','NOT')],string="Stop")
 
 
     @api.onchange('ot_type_id')
