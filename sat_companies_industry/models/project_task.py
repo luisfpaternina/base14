@@ -135,6 +135,8 @@ class ProjectTask(models.Model):
         string="Floor")
     ot_code = fields.Char(
         string="OT code")
+    notes = fields.Text(
+        string="Notes")
 
 
     @api.onchange('ot_type_id')
