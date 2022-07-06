@@ -140,6 +140,8 @@ class ProjectTask(models.Model):
     breakdowns_id = fields.Many2one(
         'project.task.breakdowns',
         string="Breakdowns")
+    is_warning = fields.Boolean(
+        string="Is warning")
 
 
     @api.onchange('ot_type_id')
