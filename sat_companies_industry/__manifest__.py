@@ -33,6 +33,7 @@
         'views/project_task_ot_checklist.xml',
         'views/project_task_inspection.xml',
         'views/project_task_ot_checklist_location.xml',
+        'views/project_task_breakdowns.xml',
         'reports/worksheet.xml',
         'reports/print_qr.xml',
         'reports/technical_data_template.xml',
