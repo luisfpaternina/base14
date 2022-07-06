@@ -155,6 +155,8 @@ class ProjectTask(models.Model):
         string="Breakdowns notice")
     is_conflictive_apparatus = fields.Boolean(
         string="Is conflictive apparatus")
+    done_work = fields.Text(
+        string="Done work")
 
 
     @api.onchange('ot_type_id')
