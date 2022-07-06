@@ -35,7 +35,7 @@
                                 <field name="teacher_id" options = "{'no_open': true, 'no_quick_create': true ,'no_create_edit': true,'no_create':true}"/>
                             </group>
                             <group>
-                                 <field name="area_ids" widget="many2many_tags" placeholder="Areas..." options = "{'no_open': true, 'no_quick_create': true ,'no_create_edit': true,'no_create':true}"/>
+                                 <field name="area_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
                             </group>
                         </group>
                     </sheet>
