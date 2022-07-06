@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 18:50+0000\n"
-"PO-Revision-Date: 2022-07-06 18:50+0000\n"
+"POT-Creation-Date: 2022-07-06 21:11+0000\n"
+"PO-Revision-Date: 2022-07-06 21:11+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -559,6 +559,7 @@ msgstr "Fecha inicio.Prev"
 
 #. module: sat_companies_industry
 #: model:ir.actions.act_window,name:sat_companies_industry.action_view_breakdowns
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__breakdowns_id
 #: model:ir.ui.menu,name:sat_companies_industry.menu_project_task_breakdowns
 msgid "Breakdowns"
 msgstr "Averías"
@@ -591,6 +592,7 @@ msgstr "Firma cliente"
 
 #. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_maintenance_minute_point__code
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task_breakdowns__code
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task_ot_checklist__code
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task_type_associated__code
 msgid "Code"
@@ -950,6 +952,11 @@ msgid "Is reviewed"
 msgstr "Revisado"
 
 #. module: sat_companies_industry
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__is_warning
+msgid "Is warning"
+msgstr ""
+
+#. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task_ot_checklist__check_1
 msgid "January"
 msgstr "Enero"
@@ -1169,6 +1176,7 @@ msgid "Name of signatory"
 msgstr "Nombre del firmante"
 
 #. module: sat_companies_industry
+#: model:ir.model.fields.selection,name:sat_companies_industry.selection__project_task__stop_type__not
 #: model:ir.model.fields.selection,name:sat_companies_industry.selection__project_task_ot_checklist__accomplished__not
 msgid "Not"
 msgstr "No"
@@ -1439,6 +1447,11 @@ msgid "Started"
 msgstr "Empezada"
 
 #. module: sat_companies_industry
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__stop_type
+msgid "Stop"
+msgstr "Parado"
+
+#. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__supervisor_id
 msgid "Supervisor"
 msgstr ""
@@ -1527,6 +1540,7 @@ msgstr "Fecha verificación"
 
 #. module: sat_companies_industry
 #: model:ir.model,name:sat_companies_industry.model_project_task_warning
+#: model_terms:ir.ui.view,arch_db:sat_companies_industry.view_project_task_sat_companies
 msgid "Warning"
 msgstr "Aviso"
 
@@ -1559,6 +1573,7 @@ msgid "Website communication history"
 msgstr "Historial de comunicación del website"
 
 #. module: sat_companies_industry
+#: model:ir.model.fields.selection,name:sat_companies_industry.selection__project_task__stop_type__yes
 #: model:ir.model.fields.selection,name:sat_companies_industry.selection__project_task_ot_checklist__accomplished__yes
 msgid "Yes"
 msgstr "Si"

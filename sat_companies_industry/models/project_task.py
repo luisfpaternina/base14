@@ -145,6 +145,14 @@ class ProjectTask(models.Model):
     stop_type = fields.Selection([
         ('yes','Yes'),
         ('not','Not')],string="Stop")
+    is_apartament = fields.Boolean(
+        string="Is apartament")
+    is_blocked = fields.Boolean(
+        string="is Blocked")
+    service_h = fields.Boolean(
+        string="Service 24h")
+    breakdowns_notice = fields.Text(
+        string="Breakdowns notice")
 
 
     @api.onchange('ot_type_id')
