@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 21:26+0000\n"
-"PO-Revision-Date: 2022-07-06 21:26+0000\n"
+"POT-Creation-Date: 2022-07-06 21:40+0000\n"
+"PO-Revision-Date: 2022-07-06 21:40+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -700,6 +700,11 @@ msgstr "Descripción"
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task_warning__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
+
+#. module: sat_companies_industry
+#: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__done_work
+msgid "Done work"
+msgstr "Trabajo realizado"
 
 #. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__email_contact
