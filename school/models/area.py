@@ -10,11 +10,10 @@ class Area(models.Model):
 
     
     name = fields.Char(string='Name', required=True, tracking=True)
-    color = fields.Integer(string='Color Index', default=_get_default_color)
-
-
     def _get_default_color(self):
         return randint(1, 11)
+
+    color = fields.Integer(string='Color Index', default=_get_default_color)
 
     @api.onchange('name')
     def _upper_name(self):        
