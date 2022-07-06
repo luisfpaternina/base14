@@ -2,15 +2,10 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 from datetime import datetime, date
-import logging
 
 
 class ProjectTaks(models.Model):
     _inherit = 'project.task'
-
-    is_conflictive_apparatus = fields.Boolean(
-        string="Is conflictive apparatus",
-        related="product_id.is_conflictive_apparatus")
 
     @api.model
     def create(self, vals):
