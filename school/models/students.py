@@ -59,7 +59,7 @@ class Students(models.Model):
     student_count = fields.Integer(
         string="student count",
         compute="compute_teacher_count")
-    hobby_id = fields.Many2one(
+    hobby_id = fields.Many2many(
         'hobbies',
         string="Hobby")
 
