@@ -141,8 +141,7 @@ class ProjectTask(models.Model):
         'project.task.breakdowns',
         string="Breakdowns")
     is_warning = fields.Boolean(
-        string="Is warning",
-        related="ot_type_id.is_warning")
+        string="Is warning")
 
 
     @api.onchange('ot_type_id')

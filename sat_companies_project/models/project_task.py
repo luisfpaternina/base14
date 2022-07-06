@@ -118,6 +118,9 @@ class ProjectTaskInherit(models.Model):
         string="Description")
     origin = fields.Char(
         string="Origin")
+    is_warning = fields.Boolean(
+        string="Is warning",
+        related="ot_type_id.is_warning")
 
 
     @api.onchange('partner_id','ot_type_id')
@@ -130,12 +133,10 @@ class ProjectTaskInherit(models.Model):
             else:
                 record.payment_term_ot_id = record.partner_id.property_payment_term_id
 
-
     @api.onchange('categ_udn_id')
     def related_type_ot(self):
         for record in self:
             record.ot_type_id = record.categ_udn_id.ot_type_id
-
 
     def compute_check_suscription_recurrent(self):
         for record in self:
@@ -148,7 +149,6 @@ class ProjectTaskInherit(models.Model):
                     record.check_suscription_recurrent = False
             else:
                 record.check_suscription_recurrent = False
-
 
     def confirm_check_gadget(self):
         for record in self:
@@ -182,7 +182,6 @@ class ProjectTaskInherit(models.Model):
                             record.machine_confirm = False
                             record.qr_scanner = False
     
-
     @api.onchange('qr_scanner')
     def _onchange_qr_scanner(self):
         for record in self:
@@ -190,7 +189,6 @@ class ProjectTaskInherit(models.Model):
                 record.check_qr_active = True
             else:
                 record.check_qr_active = False
-
 
     def write(self, vals):
         res = super(ProjectTaskInherit, self).write(vals)
@@ -200,7 +198,6 @@ class ProjectTaskInherit(models.Model):
                     record.state_check_qr = 'done'
                 else:
                     record.state_check_qr = 'checking'
-
 
     def action_url(self):
         return {  
