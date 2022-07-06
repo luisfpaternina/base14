@@ -144,7 +144,7 @@ class ProjectTask(models.Model):
         string="Is warning")
     stop_type = fields.Selection([
         ('yes','Yes'),
-        ('not','NOT')],string="Stop")
+        ('not','Not')],string="Stop")
 
 
     @api.onchange('ot_type_id')

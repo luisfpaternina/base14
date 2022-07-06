@@ -133,12 +133,12 @@
                   <group>
                         <field name="task_signature" widget="signature" attrs="{'invisible': [('fsm_done', '!=', True)]}"/>
                   </group>
-                  <group string="Warning" name="warning" attrs="{'invisible': [('is_warning', '!=', True)]}">
-                      <field name="breakdowns_id" options="{'no_create': True, 'no_create_edit':True}" attrs="{'invisible': [('is_warning', '!=', True)]}"/>
-                      <field name="stop_type"/>
-                  </group>
                   <group>
                       
+                  </group>
+                  <group string="Warning" name="warning" attrs="{'invisible': [('is_warning', '!=', True)]}">
+                      <field name="breakdowns_id" options="{'no_create': True, 'no_create_edit':True}" attrs="{'invisible': [('is_warning', '!=', True)]}"/>
+                      <field name="stop_type" widget="radio" options="{'horizontal': true}"/>
                   </group>
                 </group>
             </xpath>
