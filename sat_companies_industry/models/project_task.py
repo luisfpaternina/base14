@@ -137,6 +137,9 @@ class ProjectTask(models.Model):
         string="OT code")
     notes = fields.Text(
         string="Notes")
+    breakdowns_id = fields.Many2one(
+        'project.task.breakdowns',
+        string="Breakdowns")
 
 
     @api.onchange('ot_type_id')
