@@ -66,6 +66,12 @@
                                         <field name="nationality"/>
                                         <field name="city_id"/>
                                     </group>
+                                    <group>
+                                        <field name="hobby_id"/>
+                                    </group>
+                                    <group>
+                                        
+                                    </group>
                                 </group>
                             </page>
                             <page name="academic_information" string="Academic information">
