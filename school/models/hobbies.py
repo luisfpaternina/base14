@@ -10,6 +10,7 @@ class Hobbies(models.Model):
 
     
     name = fields.Char(string='Name', required=True, tracking=True)
+    color = fields.Integer(string="Color")
 
     @api.onchange('name')
     def _upper_name(self):        
