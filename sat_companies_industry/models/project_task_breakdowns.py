@@ -13,6 +13,8 @@ class ProjectTasBreakdowns(models.Model):
     active = fields.Boolean(
         string="Active",
         default=True)
+    code = fields.Char(
+        string="Code")
     
 
     @api.onchange('name')
