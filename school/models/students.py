@@ -59,6 +59,9 @@ class Students(models.Model):
     student_count = fields.Integer(
         string="student count",
         compute="compute_teacher_count")
+    hobby_id = fields.Many2one(
+        'hobbies',
+        string="Hobby")
 
 
     def get_license_plates(self):
