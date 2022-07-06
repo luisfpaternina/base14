@@ -552,6 +552,8 @@ class ProductTemplate(models.Model):
         string="Date pending correction")
     bad_points = fields.Boolean(
         string="Bad points")
+    is_conflictivea_pparatus = fields.Boolean(
+        string="Is conflictive apparatus")
 
     
     @api.depends('is_gadget')
