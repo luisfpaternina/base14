@@ -8,8 +8,8 @@
            <span> </span>
            <span>My Button</span>
        </span>
-   </t>
-   
+    </t>
+
     <t t-name="CreateSaleOrderButtonWidget" owl="1">
         <span
             class="control-button order-split"
