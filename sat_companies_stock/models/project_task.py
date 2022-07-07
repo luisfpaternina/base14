@@ -11,7 +11,8 @@ class ProjectTaks(models.Model):
         'product.template',
         string="Gadget")
     is_conflictivea_pparatus = fields.Boolean(
-        string="Is conflictive apparatus")
+        string="Is conflictive apparatus",
+        related="product_id.is_conflictivea_pparatus")
 
 
     @api.onchange('product_id')
