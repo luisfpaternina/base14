@@ -11,7 +11,7 @@
         </span>
     </t>
 
-     <t t-name="CreateSaleOrderScreenWidget">
+     <t t-name="CreateSaleOrderScreenWidget" owl="1">
         <div class="screen">
             <div class="screen-content">
                 <div class="top-content">
