@@ -20,7 +20,7 @@
         <record id="oi1_sale_quotrejection.sale_order_lost_action" model="ir.actions.act_window">
             <field name="name">Lost Reason</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">sale_order_lost_wizard</field>
+            <field name="res_model">sale.order.lost.wizard</field>
             <field name="view_mode">form</field>
             <field name="view_id" ref="oi1_sale_quotrejection.sale_order_lost_view_form"/>
             <field name="target">new</field>
