@@ -1,8 +1,3 @@
-/** ***************************************************************************
-    Copyright (C) 2017 - Today: GRAP (http://www.grap.coop)
-    @author: Sylvain LE GAL (https://twitter.com/legalsylvain)
-    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-******************************************************************************/
 
 odoo.define("pos_order_to_sale_order.screens", function(require) {
     "use strict";
@@ -14,10 +9,7 @@ odoo.define("pos_order_to_sale_order.screens", function(require) {
     var rpc = require("web.rpc");
     var _t = core._t;
 
-    /** **********************************************************************
-        New Widget CreateSaleOrderButtonWidget:
-            * On click, display a new screen to select the action to do
-    */
+    
     var CreateSaleOrderButtonWidget = screens.ActionButtonWidget.extend({
         template: "CreateSaleOrderButtonWidget",
 
