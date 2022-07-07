@@ -7,6 +7,12 @@ from datetime import datetime, date
 class ProjectTaks(models.Model):
     _inherit = 'project.task'
 
+    product_id = fields.Many2one(
+        'product.template',
+        string="Gadget")
+    is_conflictivea_pparatus = fields.Boolean(
+        string="Is conflictive apparatus")
+
 
     @api.onchange('product_id')
     def onchange_recurrence_fields(self):
