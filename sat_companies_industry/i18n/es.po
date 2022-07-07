@@ -567,7 +567,7 @@ msgstr "Averías"
 #. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__breakdowns_notice
 msgid "Breakdowns notice"
-msgstr ""
+msgstr "Motivo averia"
 
 #. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__categ_udn_id
