@@ -52,10 +52,7 @@ odoo.define("pos_order_to_sale_order.screens", function(require) {
         },
     });
 
-    /** **********************************************************************
-        New ScreenWidget CreateSaleOrderScreenWidget:
-            * On show, display all buttons, depending on the pos configuration
-    */
+    
     var CreateSaleOrderScreenWidget = screens.ScreenWidget.extend({
         template: "CreateSaleOrderScreenWidget",
         auto_back: true,
