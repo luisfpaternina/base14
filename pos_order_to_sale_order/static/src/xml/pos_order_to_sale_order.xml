@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <template id="template" xml:space="preserve">
 
-    <t t-name="CreateSaleOrderButtonWidget">
+    <t t-name="CreateSaleOrderButtonWidget" owl="1">
         <span
             class="control-button order-split"
             id="pos_new_sale_order"
