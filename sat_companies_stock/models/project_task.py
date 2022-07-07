@@ -8,71 +8,30 @@ import logging
 class ProjectTaks(models.Model):
     _inherit = 'project.task'
 
-    """
-    @api.model
-    def create(self, vals):
-        rec = super(ProjectTaks, self).create(vals)
-        for record in rec:
-            if record.product_id and record.partner_id:
-                product = record.product_id
-                record.recurring_task = product.is_recurring_task
-                record.repeat_interval = product.repeat_interval
-                record.repeat_unit = product.repeat_unit
-                record.repeat_type = product.repeat_type
-                record.mon = product.mon
-                record.tue = product.tue
-                record.wed = product.wed
-                record.thu = product.thu
-                record.fri = product.fri
-                record.sat = product.sat
-                record.sun = product.sun
-        return rec
-
-    def write(self, vals):
-        rec = super(ProjectTaks, self).write(vals)
-        if vals.get('product_id'):
-            for record in self:
-                if record.product_id and record.partner_id:
-                    product = record.product_id
-                    record.recurring_task = product.is_recurring_task
-                    record.repeat_interval = product.repeat_interval
-                    record.repeat_unit = product.repeat_unit
-                    record.repeat_type = product.repeat_type
-                    record.mon = product.mon
-                    record.tue = product.tue
-                    record.wed = product.wed
-                    record.thu = product.thu
-                    record.fri = product.fri
-                    record.sat = product.sat
-                    record.sun = product.sun
-        return rec
-    """
 
     @api.onchange('product_id')
-    def related_recurrence_fields(self):
-        for record in self:
-            record.recurring_task = False
-            #record.repeat_interval = False
-            record.repeat_unit = False
-            record.repeat_type = False
-            record.mon = False
-            record.tue = False
-            record.wed = False
-            record.thu = False
-            record.fri = False
-            record.sat = False
-            record.sun = False
-            if record.product_id and record.partner_id:
-                product = record.product_id
-                if product.is_recurring_task == True:
-                    record.recurring_task = product.is_recurring_task
-                    #record.repeat_interval = product.repeat_interval
-                    record.repeat_unit = product.repeat_unit
-                    record.repeat_type = product.repeat_type
-                    record.mon = product.mon
-                    record.tue = product.tue
-                    record.wed = product.wed
-                    record.thu = product.thu
-                    record.fri = product.fri
-                    record.sat = product.sat
-                    record.sun = product.sun
+    def onchange_recurrence_fields(self):
+        self.recurring_task = False
+        self.repeat_interval = False
+        self.repeat_unit = False
+        self.repeat_type = False
+        self.mon = False
+        self.tue = False
+        self.wed = False
+        self.thu = False
+        self.fri = False
+        self.sat = False
+        self.sun = False
+        if self.product_id and self.partner_id:
+            product = self.product_id
+            self.recurring_task = product.is_recurring_task
+            self.repeat_interval = product.repeat_interval
+            self.repeat_unit = product.repeat_unit
+            self.repeat_type = product.repeat_type
+            self.mon = product.mon
+            self.tue = product.tue
+            self.wed = product.wed
+            self.thu = product.thu
+            self.fri = product.fri
+            self.sat = product.sat
+            self.sun = product.sun
