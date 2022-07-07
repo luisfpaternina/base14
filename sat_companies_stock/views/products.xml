@@ -116,7 +116,7 @@
                                 <field name="repeat_type" attrs="{'required': [('is_recurring_task', '=', True)]}"/>
                             </group>
                             <group>
-                                
+                                <field name="is_conflictivea_pparatus"/>
                             </group>
                             <group>
                                 <field name="maintenance_frequency_id" options="{'no_create': True, 'no_create_edit':True}" invisible="1"/>
