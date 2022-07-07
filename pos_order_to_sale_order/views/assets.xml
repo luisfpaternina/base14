@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="assets" inherit_id="point_of_sale.assets">
+    <template id="pos_extend_assets" inherit_id="point_of_sale.assets">
         <xpath expr="." position="inside">
-            <script
-                type="text/javascript"
-                src="/pos_order_to_sale_order/static/src/js/screens.js"
-            />
+            <script type="text/javascript" src="/pos_order_to_sale_order/static/src/js/screens.js"/>
         </xpath>
     </template>
 
