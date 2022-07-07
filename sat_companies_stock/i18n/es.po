@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 11:41+0000\n"
-"PO-Revision-Date: 2022-07-01 11:41+0000\n"
+"POT-Creation-Date: 2022-07-07 10:52+0000\n"
+"PO-Revision-Date: 2022-07-07 10:52+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -845,6 +845,7 @@ msgstr "Nombre delegación"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__display_name
+#: model:ir.model.fields,field_description:sat_companies_stock.field_project_task__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bench__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bidirectional_model__display_name
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_cockpit_push_type__display_name
@@ -1087,6 +1088,7 @@ msgstr "Modelo GSM"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__gadget_id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__gadget_id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_project_task__product_id
 #: model_terms:ir.ui.view,arch_db:sat_companies_stock.inherit_view_product_template_only_form_view_sat
 msgid "Gadget"
 msgstr "Aparato"
@@ -1231,6 +1233,7 @@ msgstr "Fecha alta call center"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_move__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__id
+#: model:ir.model.fields,field_description:sat_companies_stock.field_project_task__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bench__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bidirectional_model__id
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_cockpit_push_type__id
@@ -1488,6 +1491,13 @@ msgid "Is community"
 msgstr "Es comunidad"
 
 #. module: sat_companies_stock
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_conflictivea_pparatus
+#: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_conflictivea_pparatus
+#: model:ir.model.fields,field_description:sat_companies_stock.field_project_task__is_conflictivea_pparatus
+msgid "Is conflictive apparatus"
+msgstr "El aparato es conflictivo"
+
+#. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_product__is_counterweight_puffer
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template__is_counterweight_puffer
 msgid "Is counterweight puffer"
@@ -1613,6 +1623,7 @@ msgstr "Tipo cerradura rellano"
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_move____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_product_template____last_update
+#: model:ir.model.fields,field_description:sat_companies_stock.field_project_task____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bench____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_bidirectional_model____last_update
 #: model:ir.model.fields,field_description:sat_companies_stock.field_stock_cockpit_push_type____last_update
@@ -2644,6 +2655,11 @@ msgstr "Plantilla de suscripción"
 #: model:ir.model.fields.selection,name:sat_companies_stock.selection__product_template__repeat_weekday__sun
 msgid "Sunday"
 msgstr "Domingo"
+
+#. module: sat_companies_stock
+#: model:ir.model,name:sat_companies_stock.model_project_task
+msgid "Task"
+msgstr "Tarea"
 
 #. module: sat_companies_stock
 #: model:ir.model.fields,field_description:sat_companies_stock.field_account_bank_statement_line__task_user_id
