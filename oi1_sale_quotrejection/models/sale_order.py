@@ -21,9 +21,3 @@ class sale_order(models.Model):
                 'target': 'new',
                 
         }
-            
-    
-    
-  
-    
-    
