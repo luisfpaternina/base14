@@ -1,0 +1,97 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * oi1_sale_quotrejection
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-14 12:03+0000\n"
+"PO-Revision-Date: 2018-09-14 12:03+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.ui.view,arch_db:oi1_sale_quotrejection.sale_order_lost_view_form
+msgid "Cancel"
+msgstr "Annuleer"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model,name:oi1_sale_quotrejection.model_sale_order_lost_wizard
+msgid "Cancel Quotation"
+msgstr "Annuleer offerte"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_lost_wizard_create_new_quotation
+msgid "Create new Quotation"
+msgstr "Maak een vervolgofferte aan"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_lost_wizard_create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_lost_wizard_create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_lost_wizard_display_name
+msgid "Display Name"
+msgstr "Weergave naam"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_lost_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_lost_wizard___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_lost_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_lost_wizard_write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.actions.act_window,name:oi1_sale_quotrejection.sale_order_lost_action
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_lost_wizard_lost_reason_id
+msgid "Lost Reason"
+msgstr "Verliesreden"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.ui.view,arch_db:oi1_sale_quotrejection.sale_order_lost_view_form
+msgid "Lost Reason Quotation"
+msgstr "Oorzaak annuleren offerte"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model.fields,field_description:oi1_sale_quotrejection.field_sale_order_x_lost_reason_id
+msgid "Reason lost"
+msgstr "Oorzaak annulering"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.ui.view,arch_db:oi1_sale_quotrejection.view_order_form
+msgid "Reject Sale"
+msgstr "Offerte afwijzen"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.model,name:oi1_sale_quotrejection.model_sale_order
+msgid "Sales Order"
+msgstr "Verkooporder"
+
+#. module: oi1_sale_quotrejection
+#: model:ir.ui.view,arch_db:oi1_sale_quotrejection.sale_order_lost_view_form
+msgid "Submit"
+msgstr "Verstuur"
