@@ -8,7 +8,7 @@ class sale_order(models.Model):
                                  
     x_lost_reason_id = fields.Many2one('crm.lost.reason', string="Reason lost", copy=False,track_visibility='onchange');
        
-    @api.multi
+    @api.model
     def do_reject_quotation(self):
         view_id = self.env.ref('oi1_sale_quotrejection.sale_order_lost_view_form');
         return {
