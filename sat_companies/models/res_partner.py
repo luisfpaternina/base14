@@ -2,7 +2,6 @@
 from markupsafe import string
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
-import logging
 import re
 
 
