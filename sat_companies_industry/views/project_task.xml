@@ -119,6 +119,7 @@
                 <field name="inspection_id" options="{'no_create': True, 'no_create_edit':True}"/>
                 <field name="ot_date" invisible="1"/>
                 <field name="month_date" invisible="1"/>
+                <field name="is_warning" invisible="1"/>
             </xpath>
 
             <xpath expr="//form[1]/sheet[1]/group[1]" position="after">
@@ -131,6 +132,19 @@
                   </group>
                   <group>
                         <field name="task_signature" widget="signature" attrs="{'invisible': [('fsm_done', '!=', True)]}"/>
+                  </group>
+                  <group>
+                      
+                  </group>
+                  <group string="Warning" name="warning" attrs="{'invisible': [('is_warning', '!=', True)]}">
+                      <field name="breakdowns_id" options="{'no_create': True, 'no_create_edit':True}" attrs="{'invisible': [('is_warning', '!=', True)]}"/>
+                      <field name="stop_type" widget="radio" options="{'horizontal': true}"/>
+                      <field name="is_apartament"/>
+                      <field name="is_blocked"/>
+                      <field name="service_h"/>
+                      <field name="is_conflictive_apparatus"/>
+                      <field name="breakdowns_notice"/>
+                      <field name="done_work"/>
                   </group>
                 </group>
             </xpath>

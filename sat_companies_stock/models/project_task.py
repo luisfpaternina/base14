@@ -2,7 +2,6 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 from datetime import datetime, date
-import logging
 
 
 class ProjectTaks(models.Model):

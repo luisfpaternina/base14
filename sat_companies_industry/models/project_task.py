@@ -137,6 +137,26 @@ class ProjectTask(models.Model):
         string="OT code")
     notes = fields.Text(
         string="Notes")
+    breakdowns_id = fields.Many2one(
+        'project.task.breakdowns',
+        string="Breakdowns")
+    is_warning = fields.Boolean(
+        string="Is warning")
+    stop_type = fields.Selection([
+        ('yes','Yes'),
+        ('not','Not')],string="Stop")
+    is_apartament = fields.Boolean(
+        string="Is apartament")
+    is_blocked = fields.Boolean(
+        string="is Blocked")
+    service_h = fields.Boolean(
+        string="Service 24h")
+    breakdowns_notice = fields.Text(
+        string="Breakdowns notice")
+    is_conflictive_apparatus = fields.Boolean(
+        string="Is conflictive apparatus")
+    done_work = fields.Text(
+        string="Done work")
 
     @api.onchange('ot_type_id')
     def domain_udn(self):
