@@ -139,6 +139,7 @@
                       <field name="is_stop_with_company"/>
                       <field name="gadget_pda_observations"/>
                       <field name="gadget_notes"/>
+                      <field name="floor_number"/>
                   </group>
                   <group string="Warning" name="warning" attrs="{'invisible': [('is_warning', '!=', True)]}">
                       <field name="breakdowns_id" options="{'no_create': True, 'no_create_edit':True}" attrs="{'invisible': [('is_warning', '!=', True)]}"/>
