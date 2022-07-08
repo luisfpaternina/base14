@@ -16,27 +16,30 @@ class ProjectTaks(models.Model):
 
     @api.onchange('product_id')
     def onchange_recurrence_fields(self):
-        self.recurring_task = False
-        self.repeat_interval = False
-        self.repeat_unit = False
-        self.repeat_type = False
-        self.mon = False
-        self.tue = False
-        self.wed = False
-        self.thu = False
-        self.fri = False
-        self.sat = False
-        self.sun = False
         if self.product_id and self.partner_id:
-            product = self.product_id
-            self.recurring_task = product.is_recurring_task
-            self.repeat_interval = product.repeat_interval
-            self.repeat_unit = product.repeat_unit
-            self.repeat_type = product.repeat_type
-            self.mon = product.mon
-            self.tue = product.tue
-            self.wed = product.wed
-            self.thu = product.thu
-            self.fri = product.fri
-            self.sat = product.sat
-            self.sun = product.sun
+                product = self.product_id
+                if product.is_recurring_task:
+                    self.recurring_task = product.is_recurring_task
+                    self.repeat_interval = product.repeat_interval
+                    self.repeat_unit = product.repeat_unit
+                    self.repeat_type = product.repeat_type
+                    self.mon = product.mon
+                    self.tue = product.tue
+                    self.wed = product.wed
+                    self.thu = product.thu
+                    self.fri = product.fri
+                    self.sat = product.sat
+                    self.sun = product.sun
+                else:
+                    self.recurring_task = False
+                    self.repeat_interval = False
+                    self.repeat_unit = False
+                    self.repeat_type = False
+                    self.mon = False
+                    self.tue = False
+                    self.wed = False
+                    self.thu = False
+                    self.fri = False
+                    self.sat = False
+                    self.sun = False
+

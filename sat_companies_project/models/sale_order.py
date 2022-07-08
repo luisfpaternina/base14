@@ -96,6 +96,7 @@ class SaleOrder(models.Model):
                             'type_ids': record.sale_type_id.project_stage_ids.ids,
                         })
                     
+                    
                     if task_ids:
                         for task in task_ids:
                             task_value = {
@@ -105,6 +106,17 @@ class SaleOrder(models.Model):
                                     'project_id': new_project.id,
                                     'user_id': record.task_user_id.id,
                                     'product_id': record.product_id.id,
+                                    'recurring_task': record.product_id.is_recurring_task,
+                                    'repeat_interval': record.product_id.repeat_interval,
+                                    'repeat_unit': record.product_id.repeat_unit,
+                                    #'repeat_type': record.sale_order_id.product_id.repeat_type,
+                                    'mon': record.product_id.mon,
+                                    'tue': record.product_id.tue,
+                                    'wed': record.product_id.wed,
+                                    'thu': record.product_id.thu,
+                                    'fri': record.product_id.fri,
+                                    'sat': record.product_id.sat,
+                                    'sun': record.product_id.sun,
                                     'origin': record.name,
                                     'comercial_description': record.comercial_description,
                                     #'sale_line_id':record.sale_order_id.id,
@@ -115,11 +127,9 @@ class SaleOrder(models.Model):
                                     }
                             
                             task.write(task_value)
-                            task_names = [x.name for x in project_fsm.task_ids]
-                            task_name = record.name +' - '+task.name
-                            if task_name not in task_names:
-                                self.env['project.task'].create({
-                                    'name': record.name +' - '+task.name,
+                            if record.tasks_ids:
+                                for t in record.tasks_ids:
+                                    t.write({
                                     'partner_id': record.partner_id.id,
                                     'ot_type_id': record.sale_type_id.id,
                                     'gadgest_contract_type_id': record.gadgets_contract_type_id.id,
@@ -129,6 +139,49 @@ class SaleOrder(models.Model):
                                     'sale_order_id': record.id,
                                     'user_id': record.task_user_id.id,
                                     'product_id': record.product_id.id,
+                                    'recurring_task': record.product_id.is_recurring_task,
+                                    'repeat_interval': record.product_id.repeat_interval,
+                                    'repeat_unit': record.product_id.repeat_unit,
+                                    #'repeat_type': record.sale_order_id.product_id.repeat_type,
+                                    'mon': record.product_id.mon,
+                                    'tue': record.product_id.tue,
+                                    'wed': record.product_id.wed,
+                                    'thu': record.product_id.thu,
+                                    'fri': record.product_id.fri,
+                                    'sat': record.product_id.sat,
+                                    'sun': record.product_id.sun,
+                                    #'sale_line_id':record.id,
+                                    #'planned_date_begin': record.date_begin,
+                                    #'planned_date_end': record.date_end,
+                                    'categ_udn_id': record.udn_id.id
+                                    
+                                })
+
+                            task_names = [x.name for x in project_fsm.task_ids]
+                            task_name = record.name +' - '+task.name
+                            if task_name not in task_names:
+                                self.env['project.task'].create({
+                                    'name': task_name,
+                                    'partner_id': record.partner_id.id,
+                                    'ot_type_id': record.sale_type_id.id,
+                                    'gadgest_contract_type_id': record.gadgets_contract_type_id.id,
+                                    'project_id': project_fsm.id,
+                                    'origin': record.name,
+                                    'comercial_description': record.comercial_description,
+                                    'sale_order_id': record.id,
+                                    'user_id': record.task_user_id.id,
+                                    'product_id': record.product_id.id,
+                                    'recurring_task': record.product_id.is_recurring_task,
+                                    'repeat_interval': record.product_id.repeat_interval,
+                                    'repeat_unit': record.product_id.repeat_unit,
+                                    #'repeat_type': record.sale_order_id.product_id.repeat_type,
+                                    'mon': record.product_id.mon,
+                                    'tue': record.product_id.tue,
+                                    'wed': record.product_id.wed,
+                                    'thu': record.product_id.thu,
+                                    'fri': record.product_id.fri,
+                                    'sat': record.product_id.sat,
+                                    'sun': record.product_id.sun,
                                     #'sale_line_id':record.id,
                                     #'planned_date_begin': record.date_begin,
                                     #'planned_date_end': record.date_end,
