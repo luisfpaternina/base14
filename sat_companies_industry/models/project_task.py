@@ -157,6 +157,10 @@ class ProjectTask(models.Model):
         string="Is conflictive apparatus")
     done_work = fields.Text(
         string="Done work")
+    contact_person_ot = fields.Char(
+        string="Contact Person OT")
+    contact_person_telephone = fields.Char(
+        string="Telephone contact")
 
 
     @api.onchange('ot_type_id')
