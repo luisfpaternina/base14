@@ -167,6 +167,8 @@ class ProjectTask(models.Model):
         string="Gadget PDA observations")
     gadget_notes = fields.Text(
         string="Gadget notes")
+    floor_number = fields.Char(
+        string="Floor number")
 
 
     @api.onchange('ot_type_id')
