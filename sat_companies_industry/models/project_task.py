@@ -158,6 +158,7 @@ class ProjectTask(models.Model):
     done_work = fields.Text(
         string="Done work")
 
+
     @api.onchange('ot_type_id')
     def domain_udn(self):
         for record in self:
