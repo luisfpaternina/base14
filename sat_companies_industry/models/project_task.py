@@ -169,6 +169,10 @@ class ProjectTask(models.Model):
         string="Gadget notes")
     floor_number = fields.Char(
         string="Floor number")
+    maximum_rescue_time = fields.Float(
+        string="Maximum rescue time")
+    maximum_warning_time = fields.Float(
+        string="Maximum warning time")
 
 
     @api.onchange('ot_type_id')
