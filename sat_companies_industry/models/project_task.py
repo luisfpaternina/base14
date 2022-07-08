@@ -3,7 +3,6 @@ from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 from datetime import date
 import datetime
-import logging
 
 class ProjectTask(models.Model):
     _inherit = 'project.task'
