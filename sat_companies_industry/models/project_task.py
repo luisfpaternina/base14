@@ -161,6 +161,8 @@ class ProjectTask(models.Model):
         string="Contact Person OT")
     contact_person_telephone = fields.Char(
         string="Telephone contact")
+    is_stop_with_company = fields.Boolean(
+        string="Is stop with company")
 
 
     @api.onchange('ot_type_id')
