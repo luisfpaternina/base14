@@ -133,8 +133,12 @@
                   <group>
                         <field name="task_signature" widget="signature" attrs="{'invisible': [('fsm_done', '!=', True)]}"/>
                   </group>
-                  <group>
-                      
+                  <group attrs="{'invisible': [('is_warning', '!=', True)]}">
+                      <field name="contact_person_ot"/>
+                      <field name="contact_person_telephone"/>
+                      <field name="is_stop_with_company"/>
+                      <field name="gadget_pda_observations"/>
+                      <field name="gadget_notes"/>
                   </group>
                   <group string="Warning" name="warning" attrs="{'invisible': [('is_warning', '!=', True)]}">
                       <field name="breakdowns_id" options="{'no_create': True, 'no_create_edit':True}" attrs="{'invisible': [('is_warning', '!=', True)]}"/>
@@ -145,16 +149,6 @@
                       <field name="service_h"/>
                       <field name="is_conflictive_apparatus"/>
                       <field name="done_work"/>
-                  </group>
-                  <group>
-                      
-                  </group>
-                  <group attrs="{'invisible': [('is_warning', '!=', True)]}">
-                      <field name="contact_person_ot"/>
-                      <field name="contact_person_telephone"/>
-                      <field name="is_stop_with_company"/>
-                      <field name="gadget_pda_observations"/>
-                      <field name="gadget_notes"/>
                   </group>
                 </group>
             </xpath>
