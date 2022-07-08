@@ -163,6 +163,10 @@ class ProjectTask(models.Model):
         string="Telephone contact")
     is_stop_with_company = fields.Boolean(
         string="Is stop with company")
+    gadget_pda_observations = fields.Text(
+        string="Gadget PDA observations")
+    gadget_notes = fields.Text(
+        string="Gadget notes")
 
 
     @api.onchange('ot_type_id')
