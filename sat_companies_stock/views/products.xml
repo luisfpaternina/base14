@@ -113,7 +113,13 @@
                                 <field name="fri" attrs="{'invisible': [('repeat_unit', '!=', 'week')]}"/>
                                 <field name="sat" attrs="{'invisible': [('repeat_unit', '!=', 'week')]}"/>
                                 <field name="sun" attrs="{'invisible': [('repeat_unit', '!=', 'week')]}"/>
-                                <field name="repeat_type" attrs="{'required': [('is_recurring_task', '=', True)]}"/>
+                                <label for="repeat_type" />
+                                    <div class="o_row">
+                                        <field name="repeat_type" attrs="{'required': [('is_recurring_task', '=', True)]}" />
+                                        <field name="repeat_until" attrs="{'invisible': [('repeat_type', '!=', 'until')], 'required': [('repeat_type', '=', 'until')]}" />
+                                        <field name="repeat_number" attrs="{'invisible': [('repeat_type', '!=', 'after')], 'required': [('repeat_type', '=', 'after')]}" />
+                                    </div>
+
                             </group>
                             <group>
                                 <field name="is_conflictivea_pparatus"/>
