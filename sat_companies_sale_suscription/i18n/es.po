@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-21 12:38+0000\n"
-"PO-Revision-Date: 2022-06-21 12:38+0000\n"
+"POT-Creation-Date: 2022-07-08 10:24+0000\n"
+"PO-Revision-Date: 2022-07-08 10:24+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -653,6 +653,7 @@ msgid "End payment"
 msgstr "F.Fin pago"
 
 #. module: sat_companies_sale_suscription
+#: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_order__exclude_months
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_subscription__exclude_months
 msgid "Exlude Months"
 msgstr "Excluir meses"
@@ -691,6 +692,7 @@ msgstr ""
 
 #. module: sat_companies_sale_suscription
 #: model_terms:ir.ui.view,arch_db:sat_companies_sale_suscription.sale_subscription_inherit_form
+#: model_terms:ir.ui.view,arch_db:sat_companies_sale_suscription.view_sale_order_inherit_sat_companies_suscription
 msgid "Free Months"
 msgstr "Excluir meses"
 
@@ -747,7 +749,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_subscription_process__id
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_subscription_reason_change__id
 msgid "ID"
-msgstr ""
+msgstr "Id"
 
 #. module: sat_companies_sale_suscription
 #: model:ir.model.fields,help:sat_companies_sale_suscription.field_sale_subscription_demand__message_needaction
@@ -1309,9 +1311,10 @@ msgstr "Suscripción"
 #. module: sat_companies_sale_suscription
 #: model:ir.model,name:sat_companies_sale_suscription.model_sale_subscription_log
 msgid "Subscription Log"
-msgstr ""
+msgstr "Registro de suscripción"
 
 #. module: sat_companies_sale_suscription
+#: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_order__subscription_month_ids
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_subscription__subscription_month_ids
 msgid "Subscription Month"
 msgstr "Meses"
@@ -1319,7 +1322,7 @@ msgstr "Meses"
 #. module: sat_companies_sale_suscription
 #: model:ir.model,name:sat_companies_sale_suscription.model_sale_subscription_stage
 msgid "Subscription Stage"
-msgstr ""
+msgstr "Etapa de suscripción"
 
 #. module: sat_companies_sale_suscription
 #: model:ir.model,name:sat_companies_sale_suscription.model_sale_subscription_template
@@ -1387,6 +1390,7 @@ msgstr "tipo de contrato"
 
 #. module: sat_companies_sale_suscription
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_order_template__udn_id
+#: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_subscription__udn_type_id
 #: model:ir.model.fields,field_description:sat_companies_sale_suscription.field_sale_subscription_template__udn_id
 msgid "Udn"
 msgstr ""

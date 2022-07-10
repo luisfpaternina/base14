@@ -3,7 +3,6 @@ from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 from datetime import date
 import datetime
-import logging
 
 class ProjectTask(models.Model):
     _inherit = 'project.task'
@@ -157,6 +156,23 @@ class ProjectTask(models.Model):
         string="Is conflictive apparatus")
     done_work = fields.Text(
         string="Done work")
+    contact_person_ot = fields.Char(
+        string="Contact Person OT")
+    contact_person_telephone = fields.Char(
+        string="Telephone contact")
+    is_stop_with_company = fields.Boolean(
+        string="Is stop with company")
+    gadget_pda_observations = fields.Text(
+        string="Gadget PDA observations")
+    gadget_notes = fields.Text(
+        string="Gadget notes")
+    floor_number = fields.Char(
+        string="Floor number")
+    maximum_rescue_time = fields.Float(
+        string="Maximum rescue time")
+    maximum_warning_time = fields.Float(
+        string="Maximum warning time")
+
 
     @api.onchange('ot_type_id')
     def domain_udn(self):
