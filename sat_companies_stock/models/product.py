@@ -488,6 +488,8 @@ class ProductTemplate(models.Model):
         ('week','Weeks'),
         ('month','Months'),
         ('year','Years')],string="Repeat unit")
+    repeat_until = fields.Date(string="End Date")
+    repeat_number = fields.Integer(string="Repetitions")
     mon = fields.Boolean(
         string="Monday")
     tue = fields.Boolean(

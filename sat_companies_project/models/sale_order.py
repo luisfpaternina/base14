@@ -109,6 +109,8 @@ class SaleOrder(models.Model):
                                     'recurring_task': record.product_id.is_recurring_task,
                                     'repeat_interval': record.product_id.repeat_interval,
                                     'repeat_unit': record.product_id.repeat_unit,
+                                    'repeat_until': record.product_id.repeat_until,
+                                    'repeat_number': record.product_id.repeat_number,
                                     #'repeat_type': record.sale_order_id.product_id.repeat_type,
                                     'mon': record.product_id.mon,
                                     'tue': record.product_id.tue,
@@ -142,6 +144,8 @@ class SaleOrder(models.Model):
                                     'recurring_task': record.product_id.is_recurring_task,
                                     'repeat_interval': record.product_id.repeat_interval,
                                     'repeat_unit': record.product_id.repeat_unit,
+                                    'repeat_until': record.product_id.repeat_until,
+                                    'repeat_number': record.product_id.repeat_number,
                                     #'repeat_type': record.sale_order_id.product_id.repeat_type,
                                     'mon': record.product_id.mon,
                                     'tue': record.product_id.tue,
@@ -174,6 +178,8 @@ class SaleOrder(models.Model):
                                     'recurring_task': record.product_id.is_recurring_task,
                                     'repeat_interval': record.product_id.repeat_interval,
                                     'repeat_unit': record.product_id.repeat_unit,
+                                    'repeat_until': record.product_id.repeat_until,
+                                    'repeat_number': record.product_id.repeat_number,
                                     #'repeat_type': record.sale_order_id.product_id.repeat_type,
                                     'mon': record.product_id.mon,
                                     'tue': record.product_id.tue,
@@ -192,6 +198,14 @@ class SaleOrder(models.Model):
                 if self.is_potential_client:
                     raise ValidationError(_("Verify the type of client if it is potential"))
                     return res
+        
+        self.update_values_tasks_field_service()
+        print('test')
+
+    def update_values_tasks_field_service(self):
+        for record in self:
+            tasks = self.env['project.task'].search([('origin','=',record.name)])
+
 
     @api.onchange(
         'partner_id',

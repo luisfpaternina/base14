@@ -63,6 +63,7 @@ class WizardSaleOrderType(models.TransientModel):
                                 }
                         
                         task.write(task_value)
+
                         task_names = [x.name for x in project_fsm.task_ids]
                         task_name = record.sale_order_id.name +' - '+task.name
                         if task_name not in task_names:
@@ -77,6 +78,8 @@ class WizardSaleOrderType(models.TransientModel):
                                 'recurring_task': record.sale_order_id.product_id.is_recurring_task,
                                 'repeat_interval': record.sale_order_id.product_id.repeat_interval,
                                 'repeat_unit': record.sale_order_id.product_id.repeat_unit,
+                                'repeat_until': record.sale_order_id.product_id.repeat_until,
+                                'repeat_number': record.sale_order_id.product_id.repeat_number,
                                 #'repeat_type': record.sale_order_id.product_id.repeat_type,
                                 'mon': record.sale_order_id.product_id.mon,
                                 'tue': record.sale_order_id.product_id.tue,
@@ -120,6 +123,8 @@ class WizardSaleOrderType(models.TransientModel):
                         'recurring_task': record.sale_order_id.product_id.is_recurring_task,
                         'repeat_interval': record.sale_order_id.product_id.repeat_interval,
                         'repeat_unit': record.sale_order_id.product_id.repeat_unit,
+                        'repeat_until': record.sale_order_id.product_id.repeat_until,
+                        'repeat_number': record.sale_order_id.product_id.repeat_number,
                         'repeat_type': record.sale_order_id.product_id.repeat_type,
                         'mon': record.sale_order_id.product_id.mon,
                         'tue': record.sale_order_id.product_id.tue,
