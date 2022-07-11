@@ -1093,12 +1093,12 @@ msgstr "Administrador grupo de permisos OT checklist"
 #. module: sat_companies_industry
 #: model:res.groups,name:sat_companies_industry.project_tast_breakdowns_manager_group
 msgid "Manager breakdowns"
-msgstr ""
+msgstr "Administrador averías"
 
 #. module: sat_companies_industry
 #: model:res.groups,comment:sat_companies_industry.project_tast_breakdowns_manager_group
 msgid "Manager breakdowns Permission Group"
-msgstr ""
+msgstr "Grupo de permisos averías"
 
 #. module: sat_companies_industry
 #: model:res.groups,name:sat_companies_industry.maintenance_minute_point_manager_group
