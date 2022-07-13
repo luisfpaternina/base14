@@ -12,3 +12,10 @@ class ResPartner(models.Model):
 
     is_student = fields.Boolean(
         string="Is student")
+
+    def compute_is_student(self):
+        student_obj = self.env['students'].search([('name', '=', self.name)], limit=1)
+        if student_obj:
+            self.is_student = True
+        else:
+            self.is_student = False
