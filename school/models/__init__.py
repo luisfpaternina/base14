@@ -9,3 +9,4 @@ from . import settings
 from . import notes
 from . import license_plates
 from . import hobbies
+from . import res_partner
