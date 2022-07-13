@@ -62,6 +62,8 @@ class Students(models.Model):
     hobby_id = fields.Many2many(
         'hobbies',
         string="Hobby")
+    is_student = fields.Boolean(
+        string="Is student")
 
 
     def get_license_plates(self):
