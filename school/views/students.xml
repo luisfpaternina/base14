@@ -47,6 +47,14 @@
                                 </table>
                             </h1>
                         </div>
+                        <group>
+                            <group>
+                                <field name="is_student"/>
+                            </group>
+                            <group>
+
+                            </group>
+                        </group>
                         <br></br><br></br><br></br>
                         <notebook colspan="4">
                             <page name="personal_information" string="Personal information">

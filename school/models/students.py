@@ -63,7 +63,8 @@ class Students(models.Model):
         'hobbies',
         string="Hobby")
     is_student = fields.Boolean(
-        string="Is student")
+        string="Is student",
+        compute="create_student_partner")
 
 
     def get_license_plates(self):
@@ -101,6 +102,7 @@ class Students(models.Model):
             partner = record.env['res.partner'].create({
                 'name': record.name
                 })
+            record.is_student = True
 
     @api.model
     def create(self, vals):
