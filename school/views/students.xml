@@ -29,7 +29,8 @@
                             string="Crear contacto"
                             type="object"
                             name="create_student_partner"
-                            class="btn-primary"/>
+                            class="btn-primary"
+                            attrs="{'invisible': [('is_student', '!=', False)]}"/>
                     </header>
                     <sheet>
                         <div class="oe_button_box" name="button_box">
