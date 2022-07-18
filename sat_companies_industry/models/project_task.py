@@ -97,7 +97,7 @@ class ProjectTask(models.Model):
         string="Prev end date")
     actual_end_date = fields.Datetime(
         string="Actual end date")
-    verification_date = fields.Date(
+    verification_date = fields.Datetime(
         string="Verification date")
     associated_type_id = fields.Many2one(
         'project.task.type.associated',
