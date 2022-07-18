@@ -64,7 +64,7 @@ class ProjectTask(models.Model):
     delegation_name = fields.Char(
         string="Delegation name",
         related="delegation_id.name")
-    ot_date = fields.Date(
+    ot_date = fields.Datetime(
         string="Date",
         default=date.today())
     month_date = fields.Char(
