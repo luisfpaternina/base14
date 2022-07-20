@@ -300,15 +300,14 @@ class ResPartner(models.Model):
         'is_admin')
     def validate_fields(self):
         for record in self:
-            if not record.parent_id:
-                if not record.is_admin and not record.is_maintainer\
-                    and not record.is_oca and not record.is_potential_client:
-                        if not record.vat:
-                            raise ValidationError(_(
-                                'You must register an identification number'))
-                        if not record.bank_ids:
-                            raise ValidationError(_(
-                                'You must register a Bank account'))
-                        if not record.city:
-                            raise ValidationError(_(
-                                'You must register a city'))
+            if not record.is_admin and not record.is_maintainer\
+                and not record.is_oca and not record.is_potential_client:
+                    if not record.vat:
+                        raise ValidationError(_(
+                            'You must register an identification number'))
+                    if not record.bank_ids:
+                        raise ValidationError(_(
+                            'You must register a Bank account'))
+                    if not record.city:
+                        raise ValidationError(_(
+                            'You must register a city'))
