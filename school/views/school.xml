@@ -11,6 +11,7 @@
                 </tree>
             </field>
         </record>
+
         <record id="view_school_form" model="ir.ui.view">
             <field name="name">school.form</field>
             <field name="model">school</field>
