@@ -6,7 +6,7 @@
             <field name="model">pos.order</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="area">
+                <tree string="venta_actual" create="false" edit="false">
                     <field name="name"/>
                 </tree>
             </field>
