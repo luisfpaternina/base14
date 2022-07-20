@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
-        
-        <record id="paperformat_sat_report_custom_template_sale_order_contract" model="report.paperformat">
-          <field name="name">Formato de papel Contrato de mantenimiento</field>
-          <field name="default" eval="True"/>
-          <field name="format">A4</field>
-          <field name="page_height">0</field>
-          <field name="page_width">0</field>
-          <field name="orientation">Portrait</field>
-          <field name="margin_top">10</field>
-          <field name="margin_bottom">15</field>
-          <field name="margin_left">7</field>
-          <field name="margin_right">7</field>
-          <field name="header_line" eval="False"/>
-          <field name="header_spacing">3</field>
-          <field name="dpi">90</field>
-        </record>
 
          <template id="report_custom_template_sale_contract">
             <t t-call="web.html_container">
