@@ -1820,7 +1820,7 @@ msgstr "Tipo de presupuesto"
 #. module: sat_companies_sale
 #: model:ir.model,name:sat_companies_sale.model_sale_type_service
 msgid "Sale type service"
-msgstr "Información contrato"
+msgstr "Información contrato/cláusulas"
 
 #. module: sat_companies_sale
 #: model:ir.model,name:sat_companies_sale.model_sale_advance_payment_inv
@@ -2017,7 +2017,7 @@ msgstr "Seguimiento"
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_check_type_contract__type_service_id
 msgid "Type Service"
-msgstr "Información contrato"
+msgstr "Información contrato/cláusulas"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_subscription__type_contract
@@ -2028,7 +2028,7 @@ msgstr "Tipo de contrato"
 #: model:ir.actions.act_window,name:sat_companies_sale.sale_type_servic_action
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__type_service_id
 msgid "Type service"
-msgstr "Información contrato"
+msgstr "Información contrato/cláusulas"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__udn_type_id
