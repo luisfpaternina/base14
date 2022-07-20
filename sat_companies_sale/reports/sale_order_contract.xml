@@ -33,6 +33,7 @@
                                     <td>
                                         <p align="justify">
                                             <span t-field="line.description_html"></span>
+                                            <span t-raw="line.description_html"/>
                                         </p>
                                     </td>
                                 </tr>
