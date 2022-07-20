@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "norauto_pos_extended",
+    'name': "norauto pos extended",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -24,6 +24,6 @@
 
     # always loaded
     'data': [
-        #'views/pos_order.xml',
+        'views/pos_order.xml',
     ],
 }
