@@ -1152,7 +1152,7 @@ msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
 #. module: sat_companies_sale
 #: model:ir.ui.menu,name:sat_companies_sale.menu_sale_type_service
 msgid "Información Contrato"
-msgstr "Información contrato"
+msgstr "Información contrato/cláusulas"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__int_opportunity_days
@@ -1196,7 +1196,7 @@ msgstr "Es un aparato"
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_sale_order__is_line
 msgid "Is line"
-msgstr ""
+msgstr "Es línea"
 
 #. module: sat_companies_sale
 #: model:ir.model.fields,field_description:sat_companies_sale.field_crm_lead__is_low
