@@ -5,7 +5,6 @@ from odoo.exceptions import ValidationError
 from datetime import datetime, date
 import base64
 import logging
-from odoo.addons.mail.models import mail_template
 
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
@@ -92,11 +91,6 @@ class SaleOrder(models.Model):
     sign_contract_date = fields.Date(
         string="Sign contract date",
         compute="compute_contract_date")
-
-    def method_name(self): 
-        model = self.env['sale.type.service'].search([('id', 'in', self.type_service_id.id)])
-        converted_content = mail_template.mako_template_env.from_string(model.<htmlcontent>).render({'object': object_value,})
-        self.contract_ready = converted_content
 
 
     @api.depends('state','pdf_file_sale_contract')

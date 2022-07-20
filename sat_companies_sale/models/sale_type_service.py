@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
-from odoo.addons.mail.models import mail_template
 
 
 class SaleTypeService(models.Model):
