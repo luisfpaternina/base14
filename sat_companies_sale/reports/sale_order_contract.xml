@@ -32,7 +32,7 @@
                                 <tr>
                                     <td>
                                         <p align="justify">
-                                            
+                                            <span t-field="line.description_html"></span>
                                         </p>
                                     </td>
                                 </tr>
