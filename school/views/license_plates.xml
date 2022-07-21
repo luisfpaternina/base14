@@ -90,21 +90,11 @@
             </field>
         </record>
 
-        <record id="sequence_license_plates" model="ir.sequence">
-           <field name="name">License Plate</field>
-           <field name="code">license.plates</field>
-           <field name="active">TRUE</field>
-           <field name="prefix"></field>
-           <field name="padding">10</field>
-           <field name="number_next">1</field>
-           <field name="number_increment">1</field>
-        </record>
-
-
         <menuitem
             id="school_license_plates"
             name="License Plates"
             parent="menu_school"
-            action="action_view_license_plates"/>           
+            action="action_view_license_plates"/>
+        
     </data>
 </odoo>
