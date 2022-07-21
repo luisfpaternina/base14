@@ -50,7 +50,7 @@
                 string="Matricula del estudiante"
                 model="license.plates"
                 report_type="qweb-pdf"
-                name="colegio.report_custom_license_plates"
+                name="school.report_custom_license_plates"
         />
   </data>
 </odoo>
