@@ -3,9 +3,7 @@
 
     'version': '14.0.0.0',
 
-    'author': "ADG consultoría",
-
-    'contributors': ['Andrés Gutierrez'],
+    'author': "Luis Felipe Paternina",
 
     'website': "",
 
@@ -17,6 +15,7 @@
         'base',
         'helpdesk',
         'contacts',
+        'sale_management',
 
     ],
 
