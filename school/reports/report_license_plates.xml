@@ -11,7 +11,7 @@
                         	 	<tr>
                         	 		<th></th>
                         	 		<th></th>
-                        	 		<th><p align="center" style="font-size:30px;">MATRICULA #</p></th>
+                        	 		<th><p align="center" style="font-size:30px;">MATRICULA # <span t-field="o.name"></span></p></th>
                         	 	</tr>
                         	 </thead>
                         	 <tbody>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="article o_report_layout_standard">
                        <div class="page">
-                            cuerpo del reporte
+                            <p>cuerpo del reporte</p>
                             <p>
                                 <span t-raw="notes"/>
                             </p>
