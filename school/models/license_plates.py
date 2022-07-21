@@ -65,6 +65,8 @@ class LicensePlates(models.Model):
         'license.plates.lines',
         'license_plates_id',
         string="Courses")
+    notes = fields.Html(
+        string="Notes")
 
 
     #Secuencia para las matriculas de los estudiantes
