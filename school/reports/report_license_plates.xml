@@ -51,6 +51,7 @@
                 </t>
             </t>
         </template>
+
         <report
             id="id_report_custom_license_plates"
             string="Matricula del estudiante"
@@ -58,5 +59,6 @@
             report_type="qweb-pdf"
             name="school.report_custom_license_plates"
         />
+
   </data>
 </odoo>
