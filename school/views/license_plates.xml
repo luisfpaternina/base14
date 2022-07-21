@@ -66,6 +66,11 @@
 
                             </group>
                         </page>
+                        <page>
+                            <group>
+                                <field name="notes"/>
+                            </group>
+                        </page>
                     </notebook>
                     </sheet>
                     <div class="oe_chatter">
