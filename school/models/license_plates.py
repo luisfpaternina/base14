@@ -70,6 +70,11 @@ class LicensePlates(models.Model):
         string="Notes")
 
 
+    def method_name(self):
+        converted_content = mail_template.mako_template_env.from_string(notes).render({'object': object_value,})
+        return converted_content
+
+
     #Secuencia para las matriculas de los estudiantes
     @api.model
     def create(self, vals):
