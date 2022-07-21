@@ -64,7 +64,7 @@
                                 </field>
                             </group>
                         </page>
-                        <page>
+                        <page string="Notes">
                             <group>
                                 <field name="notes"/>
                             </group>
