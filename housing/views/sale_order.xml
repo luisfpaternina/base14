@@ -8,6 +8,7 @@
             <field name="arch" type="xml">
                 <tree string="venta_actual" create="false" edit="false">
                     <field name="name"/>
+                    <field name="state"/>
                 </tree>
             </field>
         </record>
