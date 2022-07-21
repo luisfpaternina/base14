@@ -34,6 +34,9 @@
                     <div class="article o_report_layout_standard">
                        <div class="page">
                             cuerpo del reporte
+                            <p>
+                                <span t-raw="notes"/>
+                            </p>
                        </div>
                     </div>
                     <div class="footer">
