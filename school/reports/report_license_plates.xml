@@ -37,8 +37,7 @@
                        <div class="page">
                             <p>cuerpo del reporte</p>
                             <p>
-                                <span t-raw="notes"/>
-                                <t t-raw="method_name()"/>
+                                <span t-raw="o.notes"/>
                             </p>
                             <p>paternina</p>
                        </div>
