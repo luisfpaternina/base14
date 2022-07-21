@@ -35,11 +35,9 @@
                     </div>
                     <div class="article o_report_layout_standard">
                        <div class="page">
-                            <p>cuerpo del reporte</p>
                             <p>
                                 <span t-raw="o.notes"/>
                             </p>
-                            <p>paternina</p>
                        </div>
                     </div>
                     <div class="footer">
