@@ -18,7 +18,7 @@
                         	 	<tr>
                         	 		<td>
                         	 			<p style="font-size:16px;">
-                        	 			
+                        	 			   <strong>Estudiante:</strong><span> </span><span t-field="o.student_id"></span>
                         	 			</p>
                         	 		</td>
                         	 		<td></td>
