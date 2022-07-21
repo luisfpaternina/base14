@@ -22,7 +22,7 @@
     'data': [
        
         'views/res_partner.xml',
-        
+        'views/sale_order.xml',
                    
     ],
     'installable': True
