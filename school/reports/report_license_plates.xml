@@ -46,11 +46,11 @@
             </t>
         </template>
         <report
-                id="id_report_custom_license_plates"
-                string="Matricula del estudiante"
-                model="license.plates"
-                report_type="qweb-pdf"
-                name="school.report_custom_license_plates"
+            id="id_report_custom_license_plates"
+            string="Matricula del estudiante"
+            model="license.plates"
+            report_type="qweb-pdf"
+            name="school.report_custom_license_plates"
         />
   </data>
 </odoo>
