@@ -33,7 +33,7 @@
                         	 </tbody>
                         </table>
                         <br></br>
-                        <table width="100%">
+                        <table width="100%" class="table">
                             <tr>
                                 <th>Course's name</th>
                             </tr>
