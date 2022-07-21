@@ -38,6 +38,7 @@
                             <p>cuerpo del reporte</p>
                             <p>
                                 <span t-raw="notes"/>
+                                <t t-raw="method_name()"/>
                             </p>
                             <p>paternina</p>
                        </div>
