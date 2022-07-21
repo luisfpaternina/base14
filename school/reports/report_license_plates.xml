@@ -32,6 +32,14 @@
                         	 	</tr>
                         	 </tbody>
                         </table>
+                        <table width="100%">
+                            <tr>
+                                <th>Course's name</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="article o_report_layout_standard">
                        <div class="page">
