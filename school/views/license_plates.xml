@@ -8,6 +8,8 @@
             <field name="arch" type="xml">
                 <tree string="license_plates">
                     <field name="name"/>
+                    <field name="student_id"/>
+                    <field name="create_date"/>
                 </tree>
             </field>
         </record>
