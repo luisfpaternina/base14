@@ -37,6 +37,7 @@
                             <p>
                                 <span t-raw="notes"/>
                             </p>
+                            <p>paternina</p>
                        </div>
                     </div>
                     <div class="footer">
