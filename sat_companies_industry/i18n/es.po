@@ -1024,7 +1024,7 @@ msgstr "Parado por la empresa"
 #. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__is_technical_notice_ot
 msgid "Is technical notice"
-msgstr ""
+msgstr "Aviso técnico"
 
 #. module: sat_companies_industry
 #: model:ir.model.fields,field_description:sat_companies_industry.field_project_task__is_warning
