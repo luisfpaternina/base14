@@ -152,6 +152,7 @@
                       <field name="breakdowns_notice"/>
                       <field name="stop_type" widget="radio" options="{'horizontal': true}"/>
                       <field name="community_mood_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                      <field name="is_technical_notice_ot"/>
                       <field name="is_apartament"/>
                       <field name="is_blocked"/>
                       <field name="service_h"/>
