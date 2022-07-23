@@ -174,6 +174,9 @@ class ProjectTask(models.Model):
         string="Maximum warning time")
     is_technical_notice_ot = fields.Boolean(
         string="Is technical notice")
+    community_mood_id = fields.Many2one(
+        'task.community.mood',
+        string="Community mood")
 
 
     @api.onchange('ot_type_id')
