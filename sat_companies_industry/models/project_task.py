@@ -172,6 +172,8 @@ class ProjectTask(models.Model):
         string="Maximum rescue time")
     maximum_warning_time = fields.Float(
         string="Maximum warning time")
+    is_technical_notice_ot = fields.Boolean(
+        string="Is technical notice")
 
 
     @api.onchange('ot_type_id')
