@@ -177,6 +177,11 @@ class ProjectTask(models.Model):
     community_mood_id = fields.Many2one(
         'task.community.mood',
         string="Community mood")
+    reading_date = fields.Datetime(
+        string="Reading date")
+    assignment_date = fields.Datetime(
+        string="Assignment date")
+
 
 
     @api.onchange('ot_type_id')
