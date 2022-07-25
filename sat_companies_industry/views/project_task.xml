@@ -72,6 +72,7 @@
                             <field name="planned_date_end" string="End prev"/>
                             <field name="actual_end_date"/>
                             <field name="verification_date"/>
+                            <field name="reading_date"/>
                         </group>
                         <group>
                             <field name="is_pending_validate"/>
@@ -124,6 +125,10 @@
 
             <xpath expr="//field[(@name='project_id')]" position="after">
                 <field name="create_date"/>
+            </xpath>
+
+            <xpath expr="//field[(@name='user_id')]" position="after">
+                <field name="assignment_date"/>
             </xpath>
 
             <xpath expr="//form[1]/sheet[1]/group[1]" position="after">
