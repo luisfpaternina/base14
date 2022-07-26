@@ -106,6 +106,8 @@ class SaleSuscriptionInherit(models.Model):
         if self.recurring_invoice_line_ids:
             for line in self.recurring_invoice_line_ids:
                 count = len(line)
+                logging.info("*****************************************************")
+                logging.info(count)
                 self.lines_count = count
         else:
             self.lines_count = 0
