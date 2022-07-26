@@ -103,14 +103,15 @@ class SaleSuscriptionInherit(models.Model):
 
     @api.depends('recurring_invoice_line_ids')
     def compute_lines_count(self):
-        if self.recurring_invoice_line_ids:
-            for line in self.recurring_invoice_line_ids:
-                count = len(line)
-                logging.info("*****************************************************")
-                logging.info(count)
-                self.lines_count = count
-        else:
-            self.lines_count = 0
+        for record in self:
+            if record.recurring_invoice_line_ids:
+                for line in record.recurring_invoice_line_ids:
+                    count = len(record.recurring_invoice_line_ids)
+                    logging.info("*****************************************************")
+                    logging.info(count)
+                    record.lines_count = count
+            else:
+                record.lines_count = 0
 
     @api.depends('partner_id', 'product_id')
     def compute_show_technical(self):
