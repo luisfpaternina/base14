@@ -29,6 +29,7 @@
                         <field name="pdf_file_welcome" invisible="1"/>
                         <field name="stage_code" invisible="1"/>
                         <field name="exclude_months"/>
+                        <field name="lines_count"/>
                     </group>
 
                 </group>
