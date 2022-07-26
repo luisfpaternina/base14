@@ -96,6 +96,8 @@ class SaleSuscriptionInherit(models.Model):
     udn_type_id = fields.Many2one(
         'project.task.categ.udn',
         string="Udn")
+    lines_count = fields.Integer(
+        string="Lines count")
 
 
     @api.depends('partner_id', 'product_id')
