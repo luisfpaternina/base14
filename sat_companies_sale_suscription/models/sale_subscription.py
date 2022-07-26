@@ -97,8 +97,17 @@ class SaleSuscriptionInherit(models.Model):
         'project.task.categ.udn',
         string="Udn")
     lines_count = fields.Integer(
-        string="Lines count")
+        string="Lines count",
+        compute="compute_lines_count")
 
+
+    @api.depends('recurring_invoice_line_ids')
+    def compute_lines_count(self):
+        if self.recurring_invoice_line_ids:
+            for line in self.recurring_invoice_line_ids:
+                self.lines_count = len(line)
+        else:
+            self.lines_count = 0
 
     @api.depends('partner_id', 'product_id')
     def compute_show_technical(self):
